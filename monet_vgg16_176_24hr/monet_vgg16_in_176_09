@@ -1,0 +1,117 @@
+Memory budget  9.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_newnode
+Solver trying batch size 176
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.28759766] [0.] [] [17.534256] [0.00300407] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.28759766] [0.1328125] [] [17.591965] [29.393255] []
+Memory budget  9.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_newnode
+Solver trying batch size 176
+[1, 2, 4, 5, 9, 10, 12, 13, 17, 18, 20, 21, 23, 24, 28, 29, 31, 32, 34, 35, 39, 40, 42, 43, 45, 46, 52, 53, 56, 57]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 86400.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 108791 rows, 24571 columns and 605937 nonzeros
+Model fingerprint: 0x3a4db913
+Variable types: 0 continuous, 24571 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+06]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 9e+06]
+Presolve removed 80606 rows and 12017 columns
+Presolve time: 1.96s
+Presolved: 28185 rows, 12554 columns, 212017 nonzeros
+Variable types: 0 continuous, 12554 integer (11761 binary)
+Found heuristic solution: objective 4262314.0000
+Found heuristic solution: objective 2309028.0000
+
+Root relaxation: objective 2.506720e+05, 3380 iterations, 0.23 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 250672.014    0  957 2309028.00 250672.014  89.1%     -    2s
+H    0     0                    362564.00000 250672.014  30.9%     -    2s
+H    0     0                    266506.00000 250672.014  5.94%     -    2s
+H    0     0                    264772.00000 250672.014  5.33%     -    2s
+H    0     0                    263587.00000 251413.680  4.62%     -    3s
+H    0     0                    263262.00000 251785.340  4.36%     -    4s
+     0     0 252081.421    0 1211 263262.000 252081.421  4.25%     -    4s
+     0     0 252081.421    0 1202 263262.000 252081.421  4.25%     -    5s
+     0     0 252081.421    0 1204 263262.000 252081.421  4.25%     -    5s
+H    0     0                    263046.00000 252081.421  4.17%     -    5s
+     0     0 252262.164    0 1654 263046.000 252262.164  4.10%     -    5s
+     0     0 252308.888    0 1685 263046.000 252308.888  4.08%     -    6s
+H    0     0                    261019.00000 252308.888  3.34%     -    6s
+H    0     0                    258309.00000 252308.888  2.32%     -    6s
+     0     0 252308.888    0  767 258309.000 252308.888  2.32%     -    6s
+H    0     0                    257540.00000 252308.888  2.03%     -    7s
+H    0     0                    256966.00000 252308.888  1.81%     -    7s
+     0     0 252308.989    0  822 256966.000 252308.989  1.81%     -    7s
+H    0     0                    256121.00000 252308.989  1.49%     -    7s
+     0     0 252342.472    0  915 256121.000 252342.472  1.48%     -    7s
+H    0     0                    254080.00000 252342.472  0.68%     -    8s
+     0     0 252342.472    0  918 254080.000 252342.472  0.68%     -    8s
+     0     0 252342.472    0 1053 254080.000 252342.472  0.68%     -    8s
+H    0     0                    254000.00000 252342.472  0.65%     -    9s
+     0     0 252365.522    0  927 254000.000 252365.522  0.64%     -    9s
+     0     0 252365.522    0  884 254000.000 252365.522  0.64%     -    9s
+     0     0 252365.522    0  893 254000.000 252365.522  0.64%     -    9s
+     0     0 252365.522    0 1065 254000.000 252365.522  0.64%     -   10s
+     0     0 252447.548    0  875 254000.000 252447.548  0.61%     -   10s
+     0     0 252447.548    0 1086 254000.000 252447.548  0.61%     -   11s
+     0     0 252447.548    0 1091 254000.000 252447.548  0.61%     -   11s
+     0     0 252447.548    0 1103 254000.000 252447.548  0.61%     -   11s
+H    0     0                    253460.00000 252447.548  0.40%     -   11s
+     0     0 252447.548    0 1099 253460.000 252447.548  0.40%     -   11s
+H    0     0                    253350.00000 252447.548  0.36%     -   12s
+     0     0 252452.076    0 1005 253350.000 252452.076  0.35%     -   12s
+     0     0 252452.076    0 1099 253350.000 252452.076  0.35%     -   13s
+     0     0 252452.076    0 1102 253350.000 252452.076  0.35%     -   13s
+H    0     0                    252794.00000 252452.076  0.14%     -   13s
+H    0     0                    252760.00000 252452.076  0.12%     -   13s
+H    0     0                    252709.00000 252452.076  0.10%     -   13s
+     0     0 252497.086    0  322 252709.000 252497.086  0.08%     -   14s
+     0     0 252497.086    0  850 252709.000 252497.086  0.08%     -   18s
+     0     0 252497.086    0  790 252709.000 252497.086  0.08%     -   19s
+H    0     0                    252688.00000 252497.086  0.08%     -   20s
+     0     0 252527.062    0 1153 252688.000 252527.062  0.06%     -   20s
+     0     0 252668.869    0  970 252688.000 252668.869  0.01%     -   20s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 2
+  Implied bound: 69
+  Clique: 3262
+  MIR: 62
+  Zero half: 13
+  RLT: 34
+  BQP: 1
+
+Explored 1 nodes (14695 simplex iterations) in 21.01 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 10: 252688 252709 252709 ... 256121
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.526880000000e+05, best bound 2.526690000000e+05, gap 0.0075%
+Batch size 176 feasible
+Solved in 28.151761s with actual opt taking -1.000000s
+Running schedule for batch size 176
+Ran schedule for batch 176 
+Ran batch 176 with peak memory  9202.78M, 3.191439s
+max batch size = 176  [ 9202.78MB]

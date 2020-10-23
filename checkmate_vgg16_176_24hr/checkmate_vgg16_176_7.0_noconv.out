@@ -1,0 +1,74 @@
+Memory budget  7.0  GB
+Batch size  176
+Model vgg16
+Mode normal
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter LogToConsole unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter LogFile unchanged
+   Value:   Default: 
+Changed value of parameter Threads to 48
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter OptimalityTol to 0.0001
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Parameter IntFeasTol unchanged
+   Value: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter Presolve to 2
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Changed value of parameter StartNodeLimit to 10000000
+   Prev: -1  Min: -2  Max: 2000000000  Default: -1
+Parameter TimeLimit unchanged
+   Value: 7200.0  Min: 0.0  Max: inf  Default: inf
+
+
+Restarting solve
+
+
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 76245 rows, 41128 columns and 229818 nonzeros
+Model fingerprint: 0x58991b21
+Variable types: 9409 continuous, 31719 integer (31719 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+06]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [1e+00, 6e+06]
+  RHS range        [1e+00, 6e+06]
+Presolve removed 50911 rows and 22137 columns
+Presolve time: 0.25s
+Presolved: 25334 rows, 18991 columns, 90568 nonzeros
+Variable types: 0 continuous, 18991 integer (14287 binary)
+Presolve removed 100 rows and 94 columns
+Presolved: 25234 rows, 18897 columns, 90367 nonzeros
+
+
+Root relaxation: objective 2.568702e+05, 4332 iterations, 0.38 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 256870.239    0 1469          - 256870.239      -     -    1s
+     0     0 260600.518    0 5173          - 260600.518      -     -    2s
+     0     0 1.000e+100    0 5171          - infeasible      -     -    3s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 663
+  Implied bound: 5
+  Clique: 7
+  MIR: 47
+  StrongCG: 2
+  Zero half: 34
+  RLT: 47
+  Relax-and-lift: 3
+
+Explored 1 nodes (14349 simplex iterations) in 3.04 seconds
+Thread count was 48 (of 48 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+SOLVE TIME 3.093716249015415

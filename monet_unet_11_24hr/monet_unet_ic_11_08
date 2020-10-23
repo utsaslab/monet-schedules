@@ -1,0 +1,4 @@
+Memory budget  8.0  GB
+Batch size  11
+Model un
+Mode inplace_conv_normal

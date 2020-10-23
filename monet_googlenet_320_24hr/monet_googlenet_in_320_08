@@ -1,0 +1,150 @@
+Memory budget  8.0  GB
+Batch size  320
+Model googlenet
+Mode inplace_newnode
+Solver trying batch size 320
+[2, 3, 8, 9, 12, 13, 18, 19, 22, 23, 26, 27, 30, 31, 34, 35, 40, 41, 45, 46, 49, 50, 53, 54, 57, 58, 61, 62, 67, 68, 74, 75, 78, 79, 82, 83, 86, 87, 90, 91, 96, 97, 102, 103, 106, 107, 112, 113, 116, 117, 120, 121, 124, 125, 128, 129, 134, 135, 139, 140, 143, 144, 147, 148, 151, 152, 155, 156, 161, 162, 166, 167, 170, 171, 174, 175, 178, 179, 182, 183, 188, 189, 194, 195, 198, 199, 204, 205, 208, 209, 212, 213, 216, 217, 220, 221, 226, 227, 233, 234, 237, 238, 241, 242, 245, 246, 249, 250, 255, 256, 260, 261, 264, 265, 268, 269, 272, 273, 276, 277, 282, 283]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 86400.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 2519327 rows, 569530 columns and 51126223 nonzeros
+Model fingerprint: 0x65f73f6b
+Variable types: 0 continuous, 569530 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+06]
+  Objective range  [1e+00, 5e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 8e+06]
+Presolve removed 0 rows and 0 columns (presolve time = 6s) ...
+Presolve removed 1717653 rows and 48033 columns (presolve time = 40s) ...
+Presolve removed 1717653 rows and 48033 columns (presolve time = 48s) ...
+Presolve removed 1717808 rows and 189333 columns (presolve time = 53s) ...
+Presolve removed 1717808 rows and 189333 columns (presolve time = 59s) ...
+Presolve removed 1717808 rows and 189333 columns (presolve time = 66s) ...
+Presolve removed 1777644 rows and 189333 columns (presolve time = 117s) ...
+Presolve removed 1777644 rows and 189623 columns (presolve time = 120s) ...
+Presolve removed 1778021 rows and 190000 columns (presolve time = 136s) ...
+Presolve removed 1901120 rows and 313485 columns (presolve time = 145s) ...
+Presolve removed 1901120 rows and 313485 columns (presolve time = 145s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 153s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 155s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 160s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 168s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 170s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 175s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 180s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 185s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 190s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 195s) ...
+Presolve removed 1921914 rows and 313485 columns (presolve time = 200s) ...
+Presolve removed 1924176 rows and 313485 columns (presolve time = 206s) ...
+Presolve removed 1924468 rows and 313620 columns (presolve time = 234s) ...
+Presolve removed 1924468 rows and 313620 columns (presolve time = 235s) ...
+Presolve removed 1924546 rows and 313890 columns (presolve time = 254s) ...
+Presolve removed 1924546 rows and 313890 columns (presolve time = 255s) ...
+Presolve removed 1924912 rows and 313890 columns (presolve time = 260s) ...
+Presolve removed 1924912 rows and 313890 columns (presolve time = 265s) ...
+Presolve removed 1924912 rows and 313890 columns (presolve time = 270s) ...
+Presolve removed 1925295 rows and 314073 columns (presolve time = 276s) ...
+Presolve removed 1925328 rows and 314082 columns (presolve time = 302s) ...
+Presolve removed 1925346 rows and 314100 columns (presolve time = 320s) ...
+Presolve removed 1925346 rows and 314100 columns (presolve time = 327s) ...
+Presolve removed 1925346 rows and 314100 columns (presolve time = 330s) ...
+Presolve removed 1925346 rows and 314100 columns (presolve time = 335s) ...
+Presolve removed 1925348 rows and 314100 columns (presolve time = 372s) ...
+Presolve removed 1925348 rows and 314100 columns (presolve time = 379s) ...
+Presolve removed 1948066 rows and 336818 columns (presolve time = 392s) ...
+Presolve removed 1910299 rows and 299051 columns
+Presolve time: 391.74s
+Presolved: 609028 rows, 270479 columns, 20847245 nonzeros
+Variable types: 0 continuous, 270479 integer (255432 binary)
+Found heuristic solution: objective 4162293.0000
+Found heuristic solution: objective 2335153.0000
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.6304000e+04   1.181120e+05   0.000000e+00    421s
+   23123    8.4451940e+04   1.331426e+05   0.000000e+00    426s
+   38913    8.5004782e+04   2.374153e+04   0.000000e+00    431s
+   45137    8.5225729e+04   2.876153e+04   0.000000e+00    437s
+   46646    8.5256061e+04   4.483397e+03   0.000000e+00    440s
+   48831    8.5280797e+04   1.495664e+05   0.000000e+00    445s
+   50244    8.5332171e+04   4.679069e+06   0.000000e+00    453s
+   50854    8.5375837e+04   6.285796e+05   0.000000e+00    458s
+   52704    8.5400690e+04   4.767751e+08   0.000000e+00    462s
+   54274    8.5656519e+04   4.509937e+06   0.000000e+00    467s
+   55234    8.5681468e+04   6.288173e+05   0.000000e+00    474s
+   56474    8.5715731e+04   4.423207e+05   0.000000e+00    477s
+   57954    8.5761627e+04   3.731778e+07   0.000000e+00    483s
+   59154    8.5844169e+04   4.610630e+03   0.000000e+00    489s
+   60264    8.5859740e+04   4.335370e+07   0.000000e+00    493s
+   61424    8.5880847e+04   1.275253e+03   0.000000e+00    498s
+   62327    8.5886481e+04   6.979147e+06   0.000000e+00    504s
+   63397    8.5953493e+04   8.862830e+06   0.000000e+00    510s
+   64447    8.5992474e+04   1.346496e+09   0.000000e+00    515s
+   66157    8.6001653e+04   2.326431e+08   0.000000e+00    521s
+   68217    8.6019442e+04   4.364632e+02   0.000000e+00    528s
+   68933    8.6021374e+04   8.271562e+02   0.000000e+00    533s
+   70053    8.6022930e+04   3.112291e+02   0.000000e+00    537s
+   71133    8.6030770e+04   9.635783e+05   0.000000e+00    541s
+   72323    8.6031308e+04   7.403457e+03   0.000000e+00    545s
+   74317    8.6035414e+04   0.000000e+00   0.000000e+00    552s
+   74677    8.6026288e+04   0.000000e+00   3.686548e-03    559s
+   74976    8.6026280e+04   0.000000e+00   0.000000e+00    567s
+
+Root relaxation: objective 8.602628e+04, 74976 iterations, 151.20 seconds
+Total elapsed time = 585.63s
+Total elapsed time = 591.85s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 86026.2803    0 19626 2335153.00 86026.2803  96.3%     -  618s
+H    0     0                    89115.000000 86026.2803  3.47%     -  619s
+H    0     0                    88177.000000 86026.2803  2.44%     -  631s
+H    0     0                    87830.000000 86026.2803  2.05%     -  636s
+H    0     0                    87483.000000 86026.2803  1.67%     -  652s
+     0     0 87111.5847    0 23159 87483.0000 87111.5847  0.42%     - 1460s
+H    0     0                    87182.000000 87111.5847  0.08%     - 1498s
+     0     0 87138.4520    0 12926 87182.0000 87138.4520  0.05%     - 1651s
+     0     0 87138.4520    0 15837 87182.0000 87138.4520  0.05%     - 2456s
+     0     0 87148.9106    0 11969 87182.0000 87148.9106  0.04%     - 2882s
+     0     0 87170.1750    0 4996 87182.0000 87170.1750  0.01%     - 3102s
+     0     0 87170.5083    0 5960 87182.0000 87170.5083  0.01%     - 3110s
+     0     0 87173.4800    0 1221 87182.0000 87173.4800  0.01%     - 3172s
+
+Cutting planes:
+  Gomory: 31
+  Cover: 21
+  Implied bound: 30
+  Clique: 34
+  MIR: 35
+  StrongCG: 1
+  Zero half: 111
+  RLT: 1203
+  Relax-and-lift: 3
+
+Explored 1 nodes (231303 simplex iterations) in 3174.48 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 8: 87182 87182 87483 ... 4.16229e+06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.718200000000e+04, best bound 8.717400000000e+04, gap 0.0092%
+Batch size 320 feasible
+Solved in 4262.102190s with actual opt taking -1.000000s
+Running schedule for batch size 320
+Ran schedule for batch 320 
+Ran batch 320 with peak memory  8189.04M, 1.236174s
+max batch size = 320  [ 8189.04MB]

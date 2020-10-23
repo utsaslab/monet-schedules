@@ -1,0 +1,89 @@
+Memory budget  8.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+[1, 2, 4, 5, 9, 10, 12, 13, 17, 18, 20, 21, 23, 24, 28, 29, 31, 32, 34, 35, 39, 40, 42, 43, 45, 46, 52, 53, 56, 57]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 123122 rows, 31924 columns and 1440724 nonzeros
+Model fingerprint: 0x613785b0
+Variable types: 0 continuous, 31924 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+07]
+  Objective range  [1e+00, 1e+05]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 4e+07]
+Presolve removed 100626 rows and 20725 columns (presolve time = 5s) ...
+Presolve removed 101215 rows and 20696 columns
+Presolve time: 8.17s
+Presolved: 21907 rows, 11228 columns, 228720 nonzeros
+Variable types: 0 continuous, 11228 integer (10650 binary)
+Found heuristic solution: objective 1829170.0000
+Found heuristic solution: objective 548215.00000
+Found heuristic solution: objective 208909.00000
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.5597000e+04   2.856700e+04   0.000000e+00      8s
+    1836    1.2870959e+05   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 1.287096e+05, 1836 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 128709.589    0  350 208909.000 128709.589  38.4%     -    8s
+H    0     0                    151948.00000 128709.589  15.3%     -    8s
+H    0     0                    143113.00000 128709.589  10.1%     -    8s
+H    0     0                    140472.00000 128709.589  8.37%     -    9s
+     0     0 132464.490    0  481 140472.000 132464.490  5.70%     -    9s
+     0     0 132881.713    0  491 140472.000 132881.713  5.40%     -   10s
+     0     0 133580.958    0  779 140472.000 133580.958  4.91%     -   10s
+     0     0 133678.709    0  692 140472.000 133678.709  4.84%     -   11s
+     0     0 134311.685    0  529 140472.000 134311.685  4.39%     -   11s
+     0     0 134311.685    0  531 140472.000 134311.685  4.39%     -   12s
+     0     0 134830.589    0  607 140472.000 134830.589  4.02%     -   12s
+     0     0 134939.176    0  612 140472.000 134939.176  3.94%     -   13s
+     0     0 135013.262    0  611 140472.000 135013.262  3.89%     -   13s
+     0     0 135013.262    0  564 140472.000 135013.262  3.89%     -   14s
+     0     2 135013.262    0  564 140472.000 135013.262  3.89%     -   15s
+*  120    97              14    138333.00000 135301.595  2.19%  52.3   16s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 24
+  Implied bound: 2
+  Clique: 5
+  MIR: 35
+  StrongCG: 2
+  GUB cover: 1
+  Inf proof: 1
+  Zero half: 9
+  RLT: 41
+  Relax-and-lift: 1
+
+Explored 467 nodes (21181 simplex iterations) in 18.99 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 7: 138333 140472 143113 ... 1.82917e+06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.383330000000e+05, best bound 1.383330000000e+05, gap 0.0000%
+Memory budget  8.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Loading solver_info, solution from ../data/cvxpy_solution_vgg16_176_inplace_conv_multiway_newnode_8.00.pkl
+autosave: 1366.647266ms avg, -1.000000s last iteration,  8065.55 MB

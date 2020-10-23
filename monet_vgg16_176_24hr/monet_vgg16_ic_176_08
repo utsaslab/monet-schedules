@@ -1,0 +1,113 @@
+Memory budget  8.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_normal
+Solver trying batch size 176
+[1, 3, 6, 8, 11, 13, 15, 18, 20, 22, 25, 27, 29, 34, 37]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 86400.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125079 rows, 34355 columns and 372682 nonzeros
+Model fingerprint: 0x2af14ee6
+Variable types: 0 continuous, 34355 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+05]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 8e+06]
+Presolve removed 111832 rows and 25157 columns
+Presolve time: 1.70s
+Presolved: 13247 rows, 9198 columns, 78502 nonzeros
+Variable types: 0 continuous, 9198 integer (8701 binary)
+Found heuristic solution: objective 968388.00000
+Found heuristic solution: objective 235855.00000
+
+Root relaxation: objective 1.299198e+05, 1346 iterations, 0.09 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 129919.809    0  243 235855.000 129919.809  44.9%     -    2s
+H    0     0                    143170.00000 129919.809  9.25%     -    2s
+H    0     0                    140419.00000 129919.809  7.48%     -    2s
+     0     0 133374.799    0  533 140419.000 133374.799  5.02%     -    2s
+     0     0 133870.051    0  348 140419.000 133870.051  4.66%     -    2s
+     0     0 133973.271    0  591 140419.000 133973.271  4.59%     -    2s
+     0     0 133973.271    0  592 140419.000 133973.271  4.59%     -    2s
+     0     0 134358.097    0  259 140419.000 134358.097  4.32%     -    2s
+     0     0 134703.063    0  345 140419.000 134703.063  4.07%     -    2s
+     0     0 134721.381    0  345 140419.000 134721.381  4.06%     -    3s
+     0     0 134934.062    0  214 140419.000 134934.062  3.91%     -    3s
+     0     0 135077.721    0  443 140419.000 135077.721  3.80%     -    3s
+     0     0 135077.721    0  339 140419.000 135077.721  3.80%     -    3s
+     0     0 135131.087    0  333 140419.000 135131.087  3.77%     -    3s
+     0     0 135220.303    0  337 140419.000 135220.303  3.70%     -    3s
+     0     0 135234.516    0  464 140419.000 135234.516  3.69%     -    4s
+     0     0 135256.523    0  461 140419.000 135256.523  3.68%     -    4s
+     0     0 135349.323    0  457 140419.000 135349.323  3.61%     -    4s
+     0     0 135355.410    0  422 140419.000 135355.410  3.61%     -    4s
+     0     0 135355.410    0  242 140419.000 135355.410  3.61%     -    5s
+     0     0 135355.410    0  332 140419.000 135355.410  3.61%     -    5s
+     0     0 135355.410    0  265 140419.000 135355.410  3.61%     -    5s
+     0     0 135355.410    0  437 140419.000 135355.410  3.61%     -    5s
+     0     0 135355.410    0  467 140419.000 135355.410  3.61%     -    5s
+     0     0 135355.410    0  447 140419.000 135355.410  3.61%     -    5s
+     0     0 135355.410    0  450 140419.000 135355.410  3.61%     -    6s
+     0     0 135560.278    0  591 140419.000 135560.278  3.46%     -    6s
+     0     0 135633.235    0  413 140419.000 135633.235  3.41%     -    6s
+     0     0 135690.296    0  455 140419.000 135690.296  3.37%     -    6s
+     0     0 135690.296    0  472 140419.000 135690.296  3.37%     -    6s
+     0     0 135690.296    0  468 140419.000 135690.296  3.37%     -    6s
+     0     0 135690.296    0  472 140419.000 135690.296  3.37%     -    6s
+     0     0 135690.296    0  474 140419.000 135690.296  3.37%     -    6s
+     0     0 135953.914    0  283 140419.000 135953.914  3.18%     -    7s
+     0     0 135953.914    0  473 140419.000 135953.914  3.18%     -    7s
+     0     0 135959.608    0  528 140419.000 135959.608  3.18%     -    7s
+     0     0 136036.943    0  650 140419.000 136036.943  3.12%     -    7s
+     0     0 136073.188    0  534 140419.000 136073.188  3.09%     -    7s
+     0     0 136073.633    0  528 140419.000 136073.633  3.09%     -    7s
+     0     0 136228.122    0  482 140419.000 136228.122  2.98%     -    7s
+     0     0 136228.122    0  472 140419.000 136228.122  2.98%     -    7s
+     0     0 136228.122    0  532 140419.000 136228.122  2.98%     -    7s
+     0     0 136228.122    0  530 140419.000 136228.122  2.98%     -    7s
+     0     0 136228.122    0  411 140419.000 136228.122  2.98%     -    7s
+     0     0 136228.122    0  402 140419.000 136228.122  2.98%     -    8s
+     0     2 137043.875    0  402 140419.000 137043.875  2.40%     -    8s
+   626    80 137782.680   14  371 140419.000 137285.499  2.23%  31.1   10s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 45
+  Clique: 8
+  MIR: 30
+  StrongCG: 4
+  GUB cover: 1
+  Inf proof: 7
+  Zero half: 25
+  Mod-K: 1
+  RLT: 37
+  Relax-and-lift: 2
+
+Explored 934 nodes (36150 simplex iterations) in 11.01 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 5: 140419 140419 143170 ... 968388
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.404190000000e+05, best bound 1.404190000000e+05, gap 0.0000%
+Batch size 176 feasible
+Solved in 15.660883s with actual opt taking -1.000000s
+Running schedule for batch size 176
+Ran schedule for batch 176 
+Ran batch 176 with peak memory  8188.65M, 1.603751s
+max batch size = 176  [ 8188.65MB]

@@ -1,0 +1,80 @@
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode normal
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter LogToConsole unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter LogFile unchanged
+   Value:   Default: 
+Changed value of parameter Threads to 48
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter OptimalityTol to 0.0001
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Parameter IntFeasTol unchanged
+   Value: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter Presolve to 2
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Changed value of parameter StartNodeLimit to 10000000
+   Prev: -1  Min: -2  Max: 2000000000  Default: -1
+Parameter TimeLimit unchanged
+   Value: 7200.0  Min: 0.0  Max: inf  Default: inf
+
+
+Restarting solve
+
+
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 76245 rows, 41128 columns and 229818 nonzeros
+Model fingerprint: 0x34026eec
+Variable types: 9409 continuous, 31719 integer (31719 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+06]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [1e+00, 9e+06]
+  RHS range        [1e+00, 9e+06]
+Presolve removed 50825 rows and 22074 columns
+Presolve time: 0.24s
+Presolved: 25420 rows, 19054 columns, 90929 nonzeros
+Variable types: 0 continuous, 19054 integer (14343 binary)
+Found heuristic solution: objective 8060967.0000
+Presolve removed 86 rows and 86 columns
+Presolved: 25334 rows, 18968 columns, 90757 nonzeros
+
+
+Root relaxation: objective 2.501508e+05, 7000 iterations, 0.44 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 250150.764    0 1167 8060967.00 250150.764  96.9%     -    1s
+     0     0 250572.875    0 1015 8060967.00 250572.875  96.9%     -    2s
+     0     0 250572.875    0  968 8060967.00 250572.875  96.9%     -    2s
+     0     0 250575.561    0 1214 8060967.00 250575.561  96.9%     -    2s
+     0     0 250577.041    0 1897 8060967.00 250577.041  96.9%     -    3s
+     0     0 250577.041    0 1430 8060967.00 250577.041  96.9%     -    3s
+     0     0 250578.027    0  741 8060967.00 250578.027  96.9%     -    3s
+H    0     0                    274104.00000 250578.027  8.58%     -    3s
+H    0     0                    269928.00000 250578.027  7.17%     -    3s
+     0     0 250591.526    0 2752 269928.000 250591.526  7.16%     -    3s
+     0     0 250600.000    0 1246 269928.000 250600.000  7.16%     -    3s
+     0     0 250600.000    0 1409 269928.000 250600.000  7.16%     -    3s
+     0     0 250600.000    0  150 269928.000 250600.000  7.16%     -    4s
+H    0     0                    252365.00000 250600.000  0.70%     -    4s
+     0     0 250600.000    0  466 252365.000 250600.000  0.70%     -    4s
+     0     0 250600.000    0   34 252365.000 250600.000  0.70%     -    4s
+     0     0 250600.000    0 1245 252365.000 250600.000  0.70%     -    7s
+H    0     0                    250600.00000 250600.000  0.00%     -    7s
+
+Explored 1 nodes (27322 simplex iterations) in 7.61 seconds
+Thread count was 48 (of 48 available processors)
+
+Solution count 5: 250600 252365 269928 ... 8.06097e+06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.506000000000e+05, best bound 2.506000000000e+05, gap 0.0000%
+SOLVE TIME 7.671999499987578
+autosave: 2484.655078ms avg, -1.000000s last iteration, 10510.92 MB

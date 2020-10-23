@@ -1,0 +1,94 @@
+Memory budget  9.0  GB
+Batch size  176
+Model vgg16
+Mode normal
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter LogToConsole unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter LogFile unchanged
+   Value:   Default: 
+Changed value of parameter Threads to 48
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter OptimalityTol to 0.0001
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Parameter IntFeasTol unchanged
+   Value: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter Presolve to 2
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Changed value of parameter StartNodeLimit to 10000000
+   Prev: -1  Min: -2  Max: 2000000000  Default: -1
+Parameter TimeLimit unchanged
+   Value: 7200.0  Min: 0.0  Max: inf  Default: inf
+
+
+Restarting solve
+
+
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 76245 rows, 41128 columns and 229818 nonzeros
+Model fingerprint: 0xb8e1719c
+Variable types: 9409 continuous, 31719 integer (31719 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+06]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [1e+00, 8e+06]
+  RHS range        [1e+00, 8e+06]
+Presolve removed 50826 rows and 22075 columns
+Presolve time: 0.24s
+Presolved: 25419 rows, 19053 columns, 90927 nonzeros
+Variable types: 0 continuous, 19053 integer (14343 binary)
+Presolve removed 86 rows and 86 columns
+Presolved: 25333 rows, 18967 columns, 90755 nonzeros
+
+
+Root relaxation: objective 2.509880e+05, 6860 iterations, 0.40 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 250988.000    0  387          - 250988.000      -     -    1s
+     0     0 250988.000    0 2021          - 250988.000      -     -    2s
+     0     0 250988.000    0 2028          - 250988.000      -     -    2s
+     0     0 250988.000    0  253          - 250988.000      -     -    2s
+     0     0 250988.000    0  277          - 250988.000      -     -    3s
+     0     0 250988.000    0   52          - 250988.000      -     -    3s
+     0     0 250988.000    0   52          - 250988.000      -     -    3s
+     0     0 250988.000    0  172          - 250988.000      -     -    4s
+     0     0 250988.000    0  629          - 250988.000      -     -    4s
+     0     0 250988.000    0   41          - 250988.000      -     -    4s
+     0     0 250988.000    0   39          - 250988.000      -     -    4s
+     0     0 250988.000    0   34          - 250988.000      -     -    5s
+     0     0 250988.000    0  116          - 250988.000      -     -    5s
+     0     0 250988.000    0  144          - 250988.000      -     -    5s
+H    0     0                    1127646.0000 250988.000  77.7%     -    5s
+     0     0 250988.000    0  144 1127646.00 250988.000  77.7%     -    5s
+     0     2 251030.000    0  143 1127646.00 251030.000  77.7%     -    6s
+H   38    64                    978962.00000 251030.000  74.4%   377    8s
+H   43    64                    255747.00000 251030.000  1.84%   404    8s
+H  115   134                    251383.00000 251114.517  0.11%   494    9s
+   318    25 251347.401   10  860 251383.000 251114.517  0.11%   258   10s
+
+Cutting planes:
+  Gomory: 14
+  Cover: 1401
+  Implied bound: 1
+  Clique: 5
+  MIR: 113
+  StrongCG: 7
+  Inf proof: 2
+  Zero half: 9
+  RLT: 62
+  Relax-and-lift: 1
+
+Explored 419 nodes (109601 simplex iterations) in 10.39 seconds
+Thread count was 48 (of 48 available processors)
+
+Solution count 4: 251383 255747 978962 1.12765e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.513830000000e+05, best bound 2.513830000000e+05, gap 0.0000%
+SOLVE TIME 10.447940859012306
+autosave: 2491.893164ms avg, -1.000000s last iteration,  9399.51 MB

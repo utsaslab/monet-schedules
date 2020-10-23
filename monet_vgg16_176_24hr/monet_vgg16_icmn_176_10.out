@@ -1,0 +1,465 @@
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Solver trying batch size 176
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [9.10000000e+02 5.67800000e+03 9.87265625e+01 0.00000000e+00
+ 2.87597656e-01 0.00000000e+00 3.80859375e-02 5.07841699e+03] [0. 0. 0. 0. 0. 0.] [] [   27.385294    49.35814     47.471176    24.429798    17.829657
+ -1000.          29.232334    36.587715] [0.0033617  0.00239611 0.0023365  0.00230074 0.00230074 0.00230074] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [9.09562500e+02 5.67800000e+03 9.87265625e+01 0.00000000e+00
+ 2.87597656e-01 0.00000000e+00 3.80859375e-02 5.07841699e+03] [1.32812500e-01 1.32812500e-01 8.09806250e+03 1.32812500e-01
+ 5.07841699e+03 0.00000000e+00] [] [   27.74769     53.5717      47.45556     24.430965    17.829561
+ -1000.          29.226135    40.34958 ] [   25.448656    29.32037     56.578613    27.863573   142.85873
+ -1000.      ] []
+<BwdNode aten::relu_> [    0. -2156.] [-2156.] [] [8.633244 8.358824] [13.062882] []
+<BwdNode aten::relu_> [    0. -2156.] [-2156.] [] [8.624184 8.358633] [13.062919] []
+<BwdNode aten::relu_> [  540.625 -1615.375] [-1616.] [] [18.903494 18.752039] [24.485613] []
+M: Failed fwd algo 0 CUDA out of memory. Tried to allocate 18.95 GiB (GPU 0; 15.90 GiB total capacity; 4.83 GiB already allocated; 10.41 GiB free; 4.83 GiB reserved in total by PyTorch)
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 0 CUDA out of memory. Tried to allocate 18.95 GiB (GPU 0; 15.90 GiB total capacity; 4.83 GiB already allocated; 10.41 GiB free; 4.83 GiB reserved in total by PyTorch)
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.00000000e+00 7.74200000e+03 2.04046875e+02 0.00000000e+00
+ 2.87597656e-01 0.00000000e+00 3.91113281e-01 9.70256250e+03] [0.00000000e+00 2.89550781e-01 7.74200000e+03 2.04046875e+02
+ 3.91113281e-01 9.70256250e+03] [] [-1000.         302.50104     78.638596   203.42462     95.05075
+ -1000.          70.81498     68.87074 ] [196.19075   85.64977  292.78064   68.937164  60.969902  59.03139 ] []
+M: Failed fwd algo 0 CUDA out of memory. Tried to allocate 18.95 GiB (GPU 0; 15.90 GiB total capacity; 4.83 GiB already allocated; 10.41 GiB free; 4.83 GiB reserved in total by PyTorch)
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 2 CUDA out of memory. Tried to allocate 13.19 GiB (GPU 0; 15.90 GiB total capacity; 4.83 GiB already allocated; 10.41 GiB free; 4.83 GiB reserved in total by PyTorch)
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 0 CUDA out of memory. Tried to allocate 18.95 GiB (GPU 0; 15.90 GiB total capacity; 4.83 GiB already allocated; 10.41 GiB free; 4.83 GiB reserved in total by PyTorch)
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 2 CUDA out of memory. Tried to allocate 13.19 GiB (GPU 0; 15.90 GiB total capacity; 4.83 GiB already allocated; 10.41 GiB free; 4.83 GiB reserved in total by PyTorch)
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.00000000e+00 7.74200000e+03 2.04046875e+02 0.00000000e+00
+ 2.87597656e-01 0.00000000e+00 3.91113281e-01 9.70256250e+03] [1.32568359e-01 1.32568359e-01 0.00000000e+00 1.32568359e-01
+ 9.70256226e+03 0.00000000e+00] [] [-1000.         302.3139      78.689354   203.42522     95.05149
+ -1000.          70.827705    69.944916] [  164.4978    121.22128 -1000.        111.29812   158.50702 -1000.     ] []
+<BwdNode aten::relu_> [    0. -2156.] [-2156.] [] [8.621824 8.35892 ] [13.062549] []
+<BwdNode aten::relu_> [    0. -2156.] [-2156.] [] [8.63303  8.359445] [13.061178] []
+<BwdNode aten::relu_> [  540.625 -1615.375] [-1616.] [] [18.905092 18.752134] [24.48591] []
+<BwdNode aten::max_pool2d> [1079.] [1078.] [] [8.789301] [56.595135] []
+<BwdNode aten::max_pool2d> [136.375] [66.75] [] [10.423363] [81.235886] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> ip_grad> [4.85200000e+03 2.86037500e+03 3.14546875e+02 0.00000000e+00
+ 7.22656250e-02 0.00000000e+00 7.81738281e-01 3.64000000e+03] [1.00000000e+00 1.07421875e+00 3.90137500e+03 3.15546875e+02
+ 1.78173828e+00 3.64100000e+03] [] [   62.2372      91.68015     33.619144    60.495495    45.326244
+ -1000.          34.51372     29.038965] [67.70897  42.3216   85.34022  24.949884 26.10885  22.773157] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> param_grad> [4.85200000e+03 2.86037500e+03 3.14546875e+02 0.00000000e+00
+ 7.22656250e-02 0.00000000e+00 7.81738281e-01 3.64000000e+03] [1.32324219e-01 1.32324219e-01 5.36799951e+03 1.32324219e-01
+ 3.63999951e+03 0.00000000e+00] [] [   62.39123     91.69296     33.30169     60.495544    45.32404
+ -1000.          34.531822    29.03434 ] [   58.711456    52.63338     46.05435     52.88569     45.320072
+ -1000.      ] []
+<BwdNode aten::relu_> [    0. -1078.] [-1078.] [] [4.297757 4.180479] [6.5698624] []
+<BwdNode aten::relu_> [    0. -1078.] [-1078.] [] [4.295659  4.1802764] [6.5698743] []
+<BwdNode aten::relu_> [ 270.3125 -807.6875] [-808.] [] [9.45785  9.382248] [12.251628] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> ip_grad> [9.70200000e+03 4.94056250e+03 4.42046875e+02 0.00000000e+00
+ 7.22656250e-02 0.00000000e+00 2.00000000e+00 4.85400000e+03] [0.00000000e+00 7.42187500e-02 4.94056250e+03 4.42046875e+02
+ 2.00000000e+00 4.85400000e+03] [] [  134.8536      97.04693     46.824326   113.54406     83.51674
+ -1000.          55.33495     41.89857 ] [135.92627   86.767006  73.8381    41.896782  50.390064  36.72539 ] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> param_grad> [9.70200000e+03 4.94056250e+03 4.42046875e+02 0.00000000e+00
+ 7.22656250e-02 0.00000000e+00 2.00000000e+00 4.85400000e+03] [1.32324219e-01 1.32324219e-01 6.79799951e+03 1.32324219e-01
+ 4.85399951e+03 0.00000000e+00] [] [  132.44075     97.104515    46.85179    113.56394     83.564735
+ -1000.          55.333447    41.90172 ] [  113.13354     92.185234    70.139626    92.59256     49.39332
+ -1000.      ] []
+<BwdNode aten::relu_> [    0. -1078.] [-1078.] [] [4.297507 4.180503] [6.5696716] []
+<BwdNode aten::relu_> [    0. -1078.] [-1078.] [] [4.293537 4.1803  ] [6.569636] []
+<BwdNode aten::relu_> [ 270.3125 -807.6875] [-808.] [] [9.5954895 9.392297 ] [12.2521515] []
+<BwdNode aten::max_pool2d> [540.5] [540.] [] [4.5264244] [28.5707] []
+<BwdNode aten::max_pool2d> [68.8125] [34.] [] [5.3593755] [41.013657] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [2.42700000e+03 1.78500000e+03 6.99000000e+02 1.00000000e+00
+ 1.01806641e+00 0.00000000e+00 4.12597656e+00 1.82500000e+03] [5.00000000e-01 5.20507812e-01 2.51050000e+03 6.98500000e+02
+ 3.62548828e+00 1.82450000e+03] [] [   53.403698    28.662836    20.427692    50.992012    41.905903
+ -1000.          29.944908    19.493471] [51.28024  42.78312  31.586624 16.811943 25.060797 16.089296] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [2.42700000e+03 1.78500000e+03 6.99000000e+02 1.00000000e+00
+ 1.01806641e+00 0.00000000e+00 4.12597656e+00 1.82500000e+03] [9.42382812e-01 9.42382812e-01 2.71887402e+03 9.42382812e-01
+ 1.82487402e+03 0.00000000e+00] [] [   53.3535      28.637648    20.44133     50.933887    41.912533
+ -1000.          29.792929    19.496763] [   50.793312    46.01022     32.685482    46.14482     21.731352
+ -1000.      ] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.167058  2.0914793] [3.2782793] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.1620274 2.0918608] [3.2779694] []
+<BwdNode aten::relu_> [ 135.75 -404.25] [-404.25] [] [4.749     4.6981096] [6.1341047] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [4.85300000e+03 3.56725000e+03 1.02104688e+03 1.00000000e+00
+ 1.01806641e+00 0.00000000e+00 7.25097656e+00 2.43550000e+03] [1.00000000e+00 1.02050781e+00 3.56725000e+03 1.02104688e+03
+ 7.25097656e+00 2.43550000e+03] [] [  103.36594     50.266254    32.255135    97.11528     80.06469
+ -1000.          52.500805    30.726265] [102.0894    85.25045   47.47919   29.812956  49.882114  27.927708] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [4.85300000e+03 3.56725000e+03 1.02104688e+03 1.00000000e+00
+ 1.01806641e+00 0.00000000e+00 7.25097656e+00 2.43550000e+03] [6.73828125e-02 6.73828125e-02 3.44399902e+03 6.73828125e-02
+ 2.43449902e+03 0.00000000e+00] [] [  103.48221     50.237644    32.293083    97.13189     80.06674
+ -1000.          52.538445    30.748451] [   99.82461     88.98355     48.434853    88.48305     31.515657
+ -1000.      ] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.1671772 2.0917773] [3.277874] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.162218  2.0921588] [3.2775998] []
+<BwdNode aten::relu_> [ 135.75 -404.25] [-404.25] [] [4.7468185 4.698074 ] [6.134033] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [4.85300000e+03 3.56725000e+03 1.02104688e+03 1.00000000e+00
+ 1.01806641e+00 0.00000000e+00 7.25097656e+00 2.43550000e+03] [1.00000000e+00 1.02050781e+00 3.56725000e+03 1.02104688e+03
+ 7.25097656e+00 2.43550000e+03] [] [  103.35723     49.70466     32.27718     97.256805    80.062706
+ -1000.          52.49585     30.732502] [102.12852   85.24902   47.5077    29.82279   49.86688   27.932787] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [4.85300000e+03 3.56725000e+03 1.02104688e+03 1.00000000e+00
+ 1.01806641e+00 0.00000000e+00 7.25097656e+00 2.43550000e+03] [6.73828125e-02 6.73828125e-02 3.44399902e+03 6.73828125e-02
+ 2.43449902e+03 0.00000000e+00] [] [  103.531944    50.30544     32.288624    97.05588     80.06896
+ -1000.          52.52552     30.742395] [   99.73074     88.63588     48.429955    88.64139     31.859207
+ -1000.      ] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.1641016 2.091825 ] [3.277707] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.1645665 2.0925522] [3.2774568] []
+<BwdNode aten::relu_> [ 135.75 -404.25] [-404.25] [] [4.7493696 4.697633 ] [6.134069] []
+<BwdNode aten::max_pool2d> [270.] [271.] [] [2.2992969] [14.467645] []
+<BwdNode aten::max_pool2d> [34.] [18.15625] [] [2.706039] [20.860947] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [1.21325000e+03 1.46700000e+03 1.10650000e+03 5.00000000e-01
+ 5.04882812e-01 0.00000000e+00 1.30019531e+01 9.28500000e+02] [0.00000000e+00 6.83593750e-03 1.84050000e+03 1.10600000e+03
+ 1.25009766e+01 9.28000000e+02] [] [   48.705063    18.90725     16.346275    49.26406     40.51725
+ -1000.          26.580643    14.736462] [50.594162 42.591015 16.686272 14.606297 23.626577 12.56423 ] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [1.21325000e+03 1.46700000e+03 1.10650000e+03 5.00000000e-01
+ 5.04882812e-01 0.00000000e+00 1.30019531e+01 9.28500000e+02] [3.51562500e-02 3.51562500e-02 1.39199805e+03 3.51562500e-02
+ 9.27998047e+02 0.00000000e+00] [] [   48.72032     19.039404    16.533588    49.39865     40.677048
+ -1000.          26.592802    14.752924] [   51.13412     43.55552     19.224535    43.775963    13.804626
+ -1000.      ] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.0943174 1.0478377] [1.6495824] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.0942459 1.0481477] [1.6509533] []
+<BwdNode aten::relu_> [  68.5 -201.5] [-201.5] [] [2.3911    2.3570418] [3.075993] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [2.42650000e+03 2.93450000e+03 1.83652344e+03 5.00000000e-01
+ 5.04882812e-01 0.00000000e+00 2.65000000e+01 1.24925000e+03] [5.00000000e-01 5.06835938e-01 2.93450000e+03 1.83652344e+03
+ 2.55019531e+01 1.24925000e+03] [] [   93.894615    33.950733    28.69079     95.50156     79.16169
+ -1000.          48.34585     24.931644] [101.435745  84.51769   32.06625   27.544546  47.19732   23.390495] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [2.42650000e+03 2.93450000e+03 1.83652344e+03 5.00000000e-01
+ 5.04882812e-01 0.00000000e+00 2.65000000e+01 1.24925000e+03] [3.51562500e-02 3.51562500e-02 2.44599805e+03 3.51562500e-02
+ 1.24874805e+03 0.00000000e+00] [] [   93.99656     33.903717    28.82545     95.47631     79.157936
+ -1000.          48.34528     24.933279] [  101.01124     86.0136      31.065096    86.237656    24.4959
+ -1000.      ] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.096642  1.0480762] [1.6498923] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.0961294 1.0478377] [1.6492605] []
+<BwdNode aten::relu_> [  68.5 -201.5] [-201.5] [] [2.3932815 2.3564935] [3.0757189] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [2.42650000e+03 2.93450000e+03 1.83652344e+03 5.00000000e-01
+ 5.04882812e-01 0.00000000e+00 2.65000000e+01 1.24925000e+03] [5.00000000e-01 5.06835938e-01 2.93450000e+03 1.83652344e+03
+ 2.55019531e+01 1.24925000e+03] [] [   93.90746     33.880184    28.708422    95.51483     79.1582
+ -1000.          48.345528    24.939024] [101.44156   84.51712   32.076538  27.549362  47.198616  23.392319] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [2.42650000e+03 2.93450000e+03 1.83652344e+03 5.00000000e-01
+ 5.04882812e-01 0.00000000e+00 2.65000000e+01 1.24925000e+03] [3.51562500e-02 3.51562500e-02 2.44599805e+03 3.51562500e-02
+ 1.24874805e+03 0.00000000e+00] [] [   93.97574     33.878433    28.817665    95.50212     79.158905
+ -1000.          48.366497    24.929333] [  101.0078      85.98656     31.058575    86.22591     24.451982
+ -1000.      ] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.097095  1.0478139] [1.6496539] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.0967374 1.0478854] [1.6494632] []
+<BwdNode aten::relu_> [  68.5 -201.5] [-201.5] [] [2.3917317 2.3563862] [3.0762792] []
+<BwdNode aten::max_pool2d> [135.375] [135.25] [] [1.1577964] [7.439375] []
+<BwdNode aten::max_pool2d> [17.46875] [8.921875] [] [1.3696432] [10.723734] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [6.07000000e+02 7.84625000e+02 1.83664844e+03 6.25000000e-01
+ 6.26464844e-01 0.00000000e+00 2.66250000e+01 4.32625000e+02] [6.25000000e-01 6.28417969e-01 7.84625000e+02 1.83664844e+03
+ 2.56269531e+01 4.32625000e+02] [] [   24.296438     9.65085     27.635704    25.14528     20.39442
+ -1000.          12.320256     7.915318] [30.20686   21.952843   8.4879875 27.090454  12.124049   7.544732 ] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [6.07000000e+02 7.84625000e+02 1.83664844e+03 6.25000000e-01
+ 6.26464844e-01 0.00000000e+00 2.66250000e+01 4.32625000e+02] [0.00000000e+00 1.95312500e-03 6.43998047e+02 9.76562500e-04
+ 4.31998047e+02 0.00000000e+00] [] [   24.303186      9.655965     27.570545     25.143932     20.394552
+ -1000.           12.320554      7.9177265] [   28.231739     21.722757      7.8458905    21.7996        7.8101397
+ -1000.       ] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.29246807 0.26462078] [0.42045116] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.2927065  0.26481152] [0.42042732] []
+<BwdNode aten::relu_> [ 17.46875 -50.53125] [-50.53125] [] [0.641191   0.59969425] [0.7725239] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [6.07000000e+02 7.84625000e+02 1.83664844e+03 6.25000000e-01
+ 6.26464844e-01 0.00000000e+00 2.66250000e+01 4.32625000e+02] [6.25000000e-01 6.28417969e-01 7.84625000e+02 1.83664844e+03
+ 2.56269531e+01 4.32625000e+02] [] [   24.299646      9.648884     27.585377     25.139357     20.394207
+ -1000.           12.318981      7.9149957] [30.2173   21.9525    8.486497 27.08062  12.12368   7.544613] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [6.07000000e+02 7.84625000e+02 1.83664844e+03 6.25000000e-01
+ 6.26464844e-01 0.00000000e+00 2.66250000e+01 4.32625000e+02] [0.00000000e+00 1.95312500e-03 6.43998047e+02 9.76562500e-04
+ 4.31998047e+02 0.00000000e+00] [] [   24.29979       9.65476      27.574253     25.129736     20.393848
+ -1000.           12.316561      7.9127793] [   28.215944    21.722614     7.844245    21.816576     7.837999
+ -1000.      ] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.29246807 0.26482344] [0.4199505] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.2913475 0.2646923] [0.41992664] []
+<BwdNode aten::relu_> [ 17.46875 -50.53125] [-50.53125] [] [0.6342888  0.59968233] [0.7725477] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [6.07000000e+02 7.84625000e+02 1.83664844e+03 6.25000000e-01
+ 6.26464844e-01 0.00000000e+00 2.66250000e+01 4.32625000e+02] [6.25000000e-01 6.28417969e-01 7.84625000e+02 1.83664844e+03
+ 2.56269531e+01 4.32625000e+02] [] [   24.303139      9.647608     27.575146     25.125504     20.393848
+ -1000.           12.314844      7.9131246] [30.228544  21.952868   8.4835415 27.084398  12.1219635  7.5366855] []
+M: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+M: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed fwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+C: Failed bwd algo 5 cuDNN error: CUDNN_STATUS_NOT_SUPPORTED. This error may appear if you passed in a non-contiguous input.
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [6.07000000e+02 7.84625000e+02 1.83664844e+03 6.25000000e-01
+ 6.26464844e-01 0.00000000e+00 2.66250000e+01 4.32625000e+02] [0.00000000e+00 1.95312500e-03 6.43998047e+02 9.76562500e-04
+ 4.31998047e+02 0.00000000e+00] [] [   24.315248      9.652912     27.577305     25.135744     20.393848
+ -1000.           12.325263      7.9187036] [   28.227304     21.72283       7.8477263    21.808874      7.8059435
+ -1000.       ] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.2919793 0.2646804] [0.42027235] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.29201508 0.2647996 ] [0.42014122] []
+<BwdNode aten::relu_> [ 17.46875 -50.53125] [-50.53125] [] [0.6379247 0.6001353] [0.7724047] []
+<BwdNode aten::max_pool2d> [34.] [34.625] [] [0.30475855] [2.0451188] []
+<BwdNode aten::max_pool2d> [4.2109375] [2.73046875] [] [0.36104918] [3.1099796] []
+<BwdNode aten::adaptive_avg_pool2d> [0.] [16.84375] [] [1.7222762] [1.5467405] []
+<BwdNode aten::flatten> [-16.84375] [-16.84375] [] [0.01066923] [0.00394583] []
+<BwdNode <Op aten::addmm [-1, 4096]> ip_grad> [0.] [0.] [] [7.1665645] [7.235396] []
+<BwdNode <Op aten::addmm [-1, 4096]> param_grad> [0.40625] [0.] [] [6.7970276] [4.6158433] []
+<BwdNode aten::relu_> [ 0.   -2.75] [-2.75] [] [0.01688004 0.01208782] [0.05671978] []
+<BwdNode aten::relu_> [ 0.   -2.75] [-2.75] [] [0.01741648 0.01237392] [0.05975962] []
+<BwdNode aten::relu_> [ 0.6875 -2.0625] [-2.0625] [] [0.11599064 0.10505915] [0.07441044] []
+<BwdNode aten::dropout> [0.6875] [2.75] [] [0.0295639] [0.06281137] []
+<BwdNode <Op aten::addmm [-1, 4096]> ip_grad> [0.] [0.] [] [1.1515856] [1.1188626] []
+<BwdNode <Op aten::addmm [-1, 4096]> param_grad> [0.] [0.] [] [1.2559295] [0.8170724] []
+<BwdNode aten::relu_> [ 0.   -2.75] [-2.75] [] [0.01729727 0.0125289 ] [0.05862713] []
+<BwdNode aten::relu_> [ 0.   -2.75] [-2.75] [] [0.01802444 0.01249313] [0.05881786] []
+<BwdNode aten::relu_> [ 0.6875 -2.0625] [-2.0625] [] [0.11403561 0.10540485] [0.07406473] []
+<BwdNode aten::dropout> [0.6875] [2.75] [] [0.02946854] [0.06366968] []
+<BwdNode <Op aten::addmm [-1, 1000]> ip_grad> [0.] [0.] [] [0.31648874] [0.34521818] []
+<BwdNode <Op aten::addmm [-1, 1000]> param_grad> [0.] [0.37509155] [] [0.3169775] [0.2543807] []
+[1, 2, 4, 5, 9, 10, 12, 13, 17, 18, 20, 21, 23, 24, 28, 29, 31, 32, 34, 35, 39, 40, 42, 43, 45, 46, 52, 53, 56, 57]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 123122 rows, 31924 columns and 1440724 nonzeros
+Model fingerprint: 0x1105d084
+Variable types: 0 continuous, 31924 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+07]
+  Objective range  [1e+00, 1e+05]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 4e+07]
+Found heuristic solution: objective 357383.00000
+Presolve removed 100618 rows and 20695 columns (presolve time = 5s) ...
+Presolve removed 101204 rows and 20690 columns
+Presolve time: 8.18s
+Presolved: 21918 rows, 11234 columns, 228441 nonzeros
+Found heuristic solution: objective 205657.00000
+Variable types: 0 continuous, 11234 integer (10652 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.5597000e+04   2.855100e+04   0.000000e+00      8s
+    1654    1.2626442e+05   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 1.262644e+05, 1654 iterations, 0.11 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 126264.422    0  238 205657.000 126264.422  38.6%     -    8s
+H    0     0                    151854.00000 126264.422  16.9%     -    8s
+H    0     0                    136026.00000 126264.422  7.18%     -    8s
+H    0     0                    135726.00000 126895.772  6.51%     -    9s
+     0     0 128423.660    0  367 135726.000 128423.660  5.38%     -    9s
+H    0     0                    132830.00000 128423.660  3.32%     -    9s
+H    0     0                    132400.00000 128423.660  3.00%     -    9s
+     0     0 128547.410    0  369 132400.000 128547.410  2.91%     -    9s
+     0     0 129843.331    0  473 132400.000 129843.331  1.93%     -   10s
+     0     0 129905.799    0  474 132400.000 129905.799  1.88%     -   10s
+     0     0 129911.247    0  476 132400.000 129911.247  1.88%     -   10s
+     0     0 131138.667    0  745 132400.000 131138.667  0.95%     -   11s
+     0     0 131138.667    0  238 132400.000 131138.667  0.95%     -   14s
+     0     0 131138.667    0  674 132400.000 131138.667  0.95%     -   15s
+     0     0 131256.004    0  504 132400.000 131256.004  0.86%     -   15s
+     0     0 131335.934    0  783 132400.000 131335.934  0.80%     -   16s
+     0     0 131872.773    0  757 132400.000 131872.773  0.40%     -   16s
+     0     0 132400.000    0  540 132400.000 132400.000  0.00%     -   16s
+
+Cutting planes:
+  Gomory: 8
+  Cover: 97
+  Implied bound: 20
+  Clique: 685
+  MIR: 15
+  StrongCG: 1
+  Flow cover: 4
+  Zero half: 27
+  RLT: 27
+  Relax-and-lift: 12
+
+Explored 1 nodes (8154 simplex iterations) in 16.94 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 7: 132400 132830 135726 ... 357383
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.324000000000e+05, best bound 1.324000000000e+05, gap 0.0000%
+Batch size 176 feasible
+Solved in 25.310402s with actual opt taking -1.000000s
+Running schedule for batch size 176
+Ran schedule for batch 176 
+Ran batch 176 with peak memory  9940.22M, 1.500015s
+max batch size = 176  [ 9940.22MB]
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+[1, 2, 4, 5, 9, 10, 12, 13, 17, 18, 20, 21, 23, 24, 28, 29, 31, 32, 34, 35, 39, 40, 42, 43, 45, 46, 52, 53, 56, 57]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 123122 rows, 31924 columns and 1440724 nonzeros
+Model fingerprint: 0x1105d084
+Variable types: 0 continuous, 31924 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+07]
+  Objective range  [1e+00, 1e+05]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 4e+07]
+Found heuristic solution: objective 357383.00000
+Presolve removed 100174 rows and 20547 columns
+Presolve time: 4.10s
+
+Explored 0 nodes (0 simplex iterations) in 4.25 seconds
+Thread count was 1 (of 48 available processors)
+
+Solution count 1: 357383 
+
+Solve interrupted
+Best objective 3.573830000000e+05, best bound -, gap -
+
+Interrupt request received
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Loading solver_info, solution from ../data/cvxpy_solution_vgg16_176_inplace_conv_multiway_newnode_10.00.pkl
+original: 1700.270117ms avg, -1.000000s last iteration, 14383.88 MB
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Loading solver_info, solution from ../data/cvxpy_solution_vgg16_176_inplace_conv_multiway_newnode_10.00.pkl
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Loading solver_info, solution from ../data/cvxpy_solution_vgg16_176_inplace_conv_multiway_newnode_10.00.pkl
+autosave: 1309.862500ms avg, -1.000000s last iteration,  9941.03 MB
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Loading solver_info, solution from ../data/cvxpy_solution_vgg16_176_inplace_conv_multiway_newnode_10.00.pkl
+Forward mean absolute difference tensor(1.2981e-07, device='cuda:0', grad_fn=<MeanBackward0>)
+original output tensor([[-0.0665,  0.0041,  0.0114,  ...,  0.0523,  0.0706,  0.0186],
+        [-0.0800,  0.0133,  0.0159,  ...,  0.0604,  0.0747,  0.0185],
+        [-0.0661,  0.0031,  0.0135,  ...,  0.0519,  0.0735,  0.0282],
+        ...,
+        [-0.0719,  0.0075,  0.0195,  ...,  0.0453,  0.0602,  0.0269],
+        [-0.0708,  0.0099,  0.0016,  ...,  0.0513,  0.0799,  0.0184],
+        [-0.0761,  0.0062,  0.0129,  ...,  0.0605,  0.0744,  0.0240]],
+       device='cuda:0', grad_fn=<AddmmBackward>)
+ours output tensor([[-0.0665,  0.0041,  0.0114,  ...,  0.0523,  0.0706,  0.0186],
+        [-0.0800,  0.0133,  0.0159,  ...,  0.0604,  0.0747,  0.0186],
+        [-0.0661,  0.0031,  0.0135,  ...,  0.0519,  0.0735,  0.0282],
+        ...,
+        [-0.0719,  0.0075,  0.0195,  ...,  0.0453,  0.0602,  0.0269],
+        [-0.0708,  0.0099,  0.0016,  ...,  0.0513,  0.0799,  0.0184],
+        [-0.0761,  0.0062,  0.0129,  ...,  0.0605,  0.0744,  0.0240]],
+       device='cuda:0')
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Loading solver_info, solution from ../data/cvxpy_solution_vgg16_176_inplace_conv_multiway_newnode_10.00.pkl
+Forward mean absolute difference tensor(1.4808e-07, device='cuda:0', grad_fn=<MeanBackward0>)
+original output tensor([[-0.0208, -0.0342, -0.0110,  ..., -0.0202,  0.0189, -0.0621],
+        [-0.0216, -0.0380, -0.0155,  ..., -0.0158,  0.0225, -0.0620],
+        [-0.0129, -0.0251, -0.0140,  ..., -0.0187,  0.0278, -0.0605],
+        ...,
+        [-0.0073, -0.0215, -0.0047,  ..., -0.0266,  0.0153, -0.0640],
+        [-0.0171, -0.0315, -0.0183,  ..., -0.0239,  0.0258, -0.0586],
+        [-0.0133, -0.0288, -0.0090,  ..., -0.0254,  0.0152, -0.0630]],
+       device='cuda:0', grad_fn=<AddmmBackward>)
+ours output tensor([[-0.0208, -0.0342, -0.0110,  ..., -0.0202,  0.0189, -0.0621],
+        [-0.0216, -0.0380, -0.0155,  ..., -0.0158,  0.0225, -0.0620],
+        [-0.0129, -0.0251, -0.0140,  ..., -0.0187,  0.0278, -0.0605],
+        ...,
+        [-0.0073, -0.0215, -0.0047,  ..., -0.0266,  0.0153, -0.0640],
+        [-0.0171, -0.0315, -0.0183,  ..., -0.0239,  0.0258, -0.0586],
+        [-0.0133, -0.0288, -0.0090,  ..., -0.0254,  0.0152, -0.0630]],
+       device='cuda:0')
+Gradient of normal model ['-0.00008 torch.Size([64, 3, 3, 3])', '0.00244 torch.Size([64])', '-0.00008 torch.Size([64, 64, 3, 3])', '-0.00050 torch.Size([64])', '0.00088 torch.Size([128, 64, 3, 3])', '0.00320 torch.Size([128])', '0.00016 torch.Size([128, 128, 3, 3])', '0.00109 torch.Size([128])', '0.00019 torch.Size([256, 128, 3, 3])', '0.00080 torch.Size([256])', '0.00020 torch.Size([256, 256, 3, 3])', '0.00199 torch.Size([256])', '-0.00009 torch.Size([256, 256, 3, 3])', '-0.00066 torch.Size([256])', '-0.00011 torch.Size([512, 256, 3, 3])', '-0.00074 torch.Size([512])', '-0.00001 torch.Size([512, 512, 3, 3])', '-0.00010 torch.Size([512])', '0.00007 torch.Size([512, 512, 3, 3])', '0.00076 torch.Size([512])', '-0.00003 torch.Size([512, 512, 3, 3])', '-0.00028 torch.Size([512])', '0.00002 torch.Size([512, 512, 3, 3])', '0.00018 torch.Size([512])', '-0.00002 torch.Size([512, 512, 3, 3])', '-0.00017 torch.Size([512])', '-0.00000 torch.Size([4096, 25088])', '-0.00001 torch.Size([4096])', '0.00001 torch.Size([4096, 4096])', '0.00008 torch.Size([4096])', '-0.00001 torch.Size([1000, 4096])', '0.00000 torch.Size([1000])']
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_multiway_newnode
+Loading solver_info, solution from ../data/cvxpy_solution_vgg16_176_inplace_conv_multiway_newnode_10.00.pkl
+autosave: 1307.413574ms avg, -1.000000s last iteration,  9941.03 MB

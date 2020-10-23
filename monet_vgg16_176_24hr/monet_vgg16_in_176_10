@@ -1,0 +1,156 @@
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_newnode
+Solver trying batch size 176
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.28759766] [0.] [] [18.35544] [0.00277758] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.28759766] [0.1328125] [] [17.60937] [29.33855] []
+<BwdNode aten::relu_> [    0. -2156.] [-2156.] [] [8.608937 8.358849] [13.108241] []
+<BwdNode aten::relu_> [  540.625 -1615.375] [-1616.] [] [18.8619   18.758154] [24.087261] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.28759766] [0.28955078] [] [95.09836] [88.11353] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.28759766] [0.13256836] [] [94.83202] [121.13963] []
+Memory budget  10.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_newnode
+Solver trying batch size 176
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.28759766] [0.] [] [18.453444] [0.00275373] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.28759766] [0.1328125] [] [17.585169] [29.359531] []
+<BwdNode aten::relu_> [    0. -2156.] [-2156.] [] [8.60877  8.357966] [13.088] []
+<BwdNode aten::relu_> [  540.625 -1615.375] [-1616.] [] [18.885601 18.75409 ] [24.085154] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.28759766] [0.28955078] [] [95.06961] [85.662605] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.28759766] [0.13256836] [] [94.80093] [121.31649] []
+<BwdNode aten::relu_> [    0. -2156.] [-2156.] [] [8.614361 8.359087] [13.087666] []
+<BwdNode aten::relu_> [  540.625 -1615.375] [-1616.] [] [18.877554 18.753696] [24.083496] []
+<BwdNode aten::max_pool2d> [1079.] [1078.] [] [8.788133] [56.59616] []
+<BwdNode aten::max_pool2d> [136.375] [66.75] [] [10.267806] [81.63796] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> ip_grad> [0.07226562] [1.07421875] [] [45.24066] [42.324745] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> param_grad> [0.07226562] [0.13232422] [] [44.96174] [52.805805] []
+<BwdNode aten::relu_> [    0. -1078.] [-1078.] [] [4.283476 4.180753] [6.570518] []
+<BwdNode aten::relu_> [ 270.3125 -807.6875] [-808.] [] [9.440196 9.381187] [12.050236] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> ip_grad> [0.07226562] [0.07421875] [] [83.34662] [87.4655] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> param_grad> [0.07226562] [0.13232422] [] [83.04026] [91.42657] []
+<BwdNode aten::relu_> [    0. -1078.] [-1078.] [] [4.279816  4.1798234] [6.568861] []
+<BwdNode aten::relu_> [ 270.3125 -807.6875] [-808.] [] [9.441769 9.382332] [12.0492935] []
+<BwdNode aten::max_pool2d> [540.5] [540.] [] [4.536402] [28.653086] []
+<BwdNode aten::max_pool2d> [68.8125] [34.] [] [5.3604126] [41.291107] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [1.01806641] [0.52050781] [] [41.838863] [43.082237] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [1.01806641] [0.94238281] [] [41.576576] [45.84553] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.1505237 2.0920396] [3.2841802] []
+<BwdNode aten::relu_> [ 135.75 -404.25] [-404.25] [] [4.738283  4.6984553] [6.0338974] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [1.01806641] [1.02050781] [] [79.91823] [86.106575] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [1.01806641] [0.06738281] [] [79.99412] [88.60229] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.150333  2.0923734] [3.276372] []
+<BwdNode aten::relu_> [ 135.75 -404.25] [-404.25] [] [4.7370315 4.698038 ] [6.0331345] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [1.01806641] [1.02050781] [] [79.99011] [86.07642] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [1.01806641] [0.06738281] [] [79.994225] [88.84783] []
+<BwdNode aten::relu_> [   1. -539.] [-539.] [] [2.1514177 2.0921588] [3.27605] []
+<BwdNode aten::relu_> [ 135.75 -404.25] [-404.25] [] [4.7380567 4.6980977] [6.0328484] []
+<BwdNode aten::max_pool2d> [270.] [271.] [] [2.2744298] [14.467775] []
+<BwdNode aten::max_pool2d> [34.] [18.15625] [] [2.692473] [21.016861] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [0.50488281] [0.00683594] [] [40.605164] [42.92768] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [0.50488281] [0.03515625] [] [40.60756] [43.689846] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.0854006 1.0478258] [1.6431451] []
+<BwdNode aten::relu_> [  68.5 -201.5] [-201.5] [] [2.3855329 2.3568153] [3.0255914] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [0.50488281] [0.50683594] [] [79.00852] [85.289215] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [0.50488281] [0.03515625] [] [79.00457] [85.99521] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.086688  1.0477304] [1.6474605] []
+<BwdNode aten::relu_> [  68.5 -201.5] [-201.5] [] [2.3853421 2.357006 ] [3.025639] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [0.50488281] [0.50683594] [] [79.009415] [85.28773] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [0.50488281] [0.03515625] [] [79.018456] [86.08003] []
+<BwdNode aten::relu_> [   0.5 -269.5] [-269.5] [] [1.0858774 1.0475278] [1.64392] []
+<BwdNode aten::relu_> [  68.5 -201.5] [-201.5] [] [2.3854136 2.3561358] [3.0249953] []
+<BwdNode aten::max_pool2d> [135.375] [135.25] [] [1.1548638] [7.4393272] []
+<BwdNode aten::max_pool2d> [17.46875] [8.921875] [] [1.3604403] [10.93713] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [0.62646484] [0.62841797] [] [20.362234] [22.110344] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [0.62646484] [0.00195312] [] [20.361423] [21.729088] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.2883792 0.2645254] [0.41707754] []
+<BwdNode aten::relu_> [ 17.46875 -50.53125] [-50.53125] [] [0.6247282 0.5998969] [0.75962543] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [0.62646484] [0.62841797] [] [20.361757] [22.108852] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [0.62646484] [0.00195312] [] [20.36203] [21.721613] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.2881527  0.26456118] [0.4170537] []
+<BwdNode aten::relu_> [ 17.46875 -50.53125] [-50.53125] [] [0.624311  0.5996585] [0.759387] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [0.62646484] [0.62841797] [] [20.361698] [22.107924] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [0.62646484] [0.00195312] [] [20.360958] [21.788383] []
+<BwdNode aten::relu_> [  0.625 -67.375] [-67.375] [] [0.28797388 0.2645135 ] [0.4171729] []
+<BwdNode aten::relu_> [ 17.46875 -50.53125] [-50.53125] [] [0.6242633 0.5997062] [0.7595062] []
+<BwdNode aten::max_pool2d> [34.] [34.625] [] [0.299716] [2.0427346] []
+<BwdNode aten::max_pool2d> [4.2109375] [2.73046875] [] [0.35967827] [3.1238914] []
+<BwdNode aten::adaptive_avg_pool2d> [0.] [16.84375] [] [1.5443802] [1.387918] []
+<BwdNode aten::flatten> [-16.84375] [-16.84375] [] [0.01038313] [0.00337362] []
+<BwdNode <Op aten::addmm [-1, 4096]> ip_grad> [0.] [0.] [] [6.524086] [6.848848] []
+<BwdNode <Op aten::addmm [-1, 4096]> param_grad> [0.40625] [0.] [] [6.711614] [4.612255] []
+<BwdNode aten::relu_> [ 0.   -2.75] [-2.75] [] [0.01618862 0.01108646] [0.05835295] []
+<BwdNode aten::relu_> [ 0.6875 -2.0625] [-2.0625] [] [0.10896921 0.09908676] [0.07084608] []
+<BwdNode aten::dropout> [0.6875] [2.75] [] [0.02833605] [0.06221533] []
+<BwdNode <Op aten::addmm [-1, 4096]> ip_grad> [0.] [0.] [] [1.1516213] [1.1189461] []
+<BwdNode <Op aten::addmm [-1, 4096]> param_grad> [0.] [0.] [] [1.2570858] [0.814569] []
+<BwdNode aten::relu_> [ 0.   -2.75] [-2.75] [] [0.01671314 0.01158714] [0.058496] []
+<BwdNode aten::relu_> [ 0.6875 -2.0625] [-2.0625] [] [0.10874271 0.09888411] [0.07027388] []
+<BwdNode aten::dropout> [0.6875] [2.75] [] [0.02900362] [0.06220341] []
+<BwdNode <Op aten::addmm [-1, 1000]> ip_grad> [0.] [0.] [] [0.31529665] [0.3450632] []
+<BwdNode <Op aten::addmm [-1, 1000]> param_grad> [0.] [0.37509155] [] [0.31545162] [0.25259256] []
+[1, 2, 4, 5, 9, 10, 12, 13, 17, 18, 20, 21, 23, 24, 28, 29, 31, 32, 34, 35, 39, 40, 42, 43, 45, 46, 52, 53, 56, 57]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 86400.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 108791 rows, 24571 columns and 605937 nonzeros
+Model fingerprint: 0x6fb91140
+Variable types: 0 continuous, 24571 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+06]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 80578 rows and 12005 columns
+Presolve time: 1.90s
+Presolved: 28213 rows, 12566 columns, 212134 nonzeros
+Variable types: 0 continuous, 12566 integer (11771 binary)
+Found heuristic solution: objective 4341807.0000
+Found heuristic solution: objective 2308800.0000
+
+Root relaxation: objective 2.488324e+05, 4194 iterations, 0.36 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 248832.439    0 1040 2308800.00 248832.439  89.2%     -    2s
+H    0     0                    252560.00000 248832.439  1.48%     -    2s
+H    0     0                    250717.00000 248832.439  0.75%     -    2s
+     0     0 250480.655    0  696 250717.000 250480.655  0.09%     -    4s
+H    0     0                    250528.00000 250480.655  0.02%     -    4s
+H    0     0                    250499.00000 250480.655  0.01%     -    4s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 193
+  Implied bound: 5
+  Clique: 6
+  MIR: 26
+  GUB cover: 90
+  Zero half: 31
+  RLT: 27
+
+Explored 1 nodes (5615 simplex iterations) in 4.24 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 6: 250499 250528 250717 ... 4.34181e+06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.504990000000e+05, best bound 2.504810000000e+05, gap 0.0072%
+Batch size 176 feasible
+Solved in 11.064770s with actual opt taking -1.000000s
+Running schedule for batch size 176
+Ran schedule for batch 176 
+Ran batch 176 with peak memory 10210.30M, 2.756408s
+max batch size = 176  [10210.30MB]

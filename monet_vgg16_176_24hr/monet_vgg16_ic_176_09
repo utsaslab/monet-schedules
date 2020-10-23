@@ -1,0 +1,93 @@
+Memory budget  9.0  GB
+Batch size  176
+Model vgg16
+Mode inplace_conv_normal
+Solver trying batch size 176
+[1, 3, 6, 8, 11, 13, 15, 18, 20, 22, 25, 27, 29, 34, 37]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 86400.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125079 rows, 34355 columns and 372682 nonzeros
+Model fingerprint: 0x1c2eec7a
+Variable types: 0 continuous, 34355 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+05]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 9e+06]
+Presolve removed 111833 rows and 25160 columns
+Presolve time: 1.42s
+Presolved: 13246 rows, 9195 columns, 78487 nonzeros
+Variable types: 0 continuous, 9195 integer (8698 binary)
+Found heuristic solution: objective 963775.00000
+Found heuristic solution: objective 258361.00000
+
+Root relaxation: objective 1.286839e+05, 1126 iterations, 0.05 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 128683.870    0  163 258361.000 128683.870  50.2%     -    1s
+H    0     0                    138641.00000 128683.870  7.18%     -    1s
+     0     0 131511.958    0  248 138641.000 131511.958  5.14%     -    1s
+     0     0 133418.183    0  394 138641.000 133418.183  3.77%     -    2s
+     0     0 133512.782    0  395 138641.000 133512.782  3.70%     -    2s
+     0     0 133569.111    0  527 138641.000 133569.111  3.66%     -    2s
+H    0     0                    137827.00000 133569.111  3.09%     -    2s
+H    0     0                    137136.00000 133569.111  2.60%     -    2s
+     0     0 133759.500    0  364 137136.000 133759.500  2.46%     -    2s
+     0     0 133759.500    0  374 137136.000 133759.500  2.46%     -    2s
+     0     0 134046.359    0  485 137136.000 134046.359  2.25%     -    3s
+     0     0 134046.359    0  163 137136.000 134046.359  2.25%     -    3s
+     0     0 134046.359    0  563 137136.000 134046.359  2.25%     -    4s
+     0     0 134046.359    0  367 137136.000 134046.359  2.25%     -    4s
+     0     0 134046.359    0  635 137136.000 134046.359  2.25%     -    4s
+     0     0 134046.359    0  633 137136.000 134046.359  2.25%     -    4s
+     0     0 134046.359    0  425 137136.000 134046.359  2.25%     -    5s
+     0     0 134046.359    0  423 137136.000 134046.359  2.25%     -    5s
+     0     0 134046.359    0  390 137136.000 134046.359  2.25%     -    5s
+     0     0 134051.096    0  502 137136.000 134051.096  2.25%     -    5s
+     0     0 134051.096    0  642 137136.000 134051.096  2.25%     -    5s
+     0     0 134097.060    0  648 137136.000 134097.060  2.22%     -    5s
+     0     0 134217.705    0  426 137136.000 134217.705  2.13%     -    5s
+     0     0 134335.962    0  428 137136.000 134335.962  2.04%     -    5s
+     0     0 134339.423    0  516 137136.000 134339.423  2.04%     -    5s
+     0     0 134365.105    0  572 137136.000 134365.105  2.02%     -    5s
+     0     0 134472.839    0  521 137136.000 134472.839  1.94%     -    6s
+     0     0 134472.839    0  407 137136.000 134472.839  1.94%     -    6s
+     0     2 134472.839    0  407 137136.000 134472.839  1.94%     -    6s
+H   30     8                    137065.00000 135188.500  1.37%  64.7    6s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 6
+  Clique: 823
+  MIR: 16
+  Inf proof: 3
+  Zero half: 16
+  RLT: 25
+  Relax-and-lift: 1
+
+Explored 59 nodes (9652 simplex iterations) in 7.09 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 6: 137065 137136 137827 ... 963775
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.370650000000e+05, best bound 1.370650000000e+05, gap 0.0000%
+Batch size 176 feasible
+Solved in 11.748388s with actual opt taking -1.000000s
+Running schedule for batch size 176
+Ran schedule for batch 176 
+Ran batch 176 with peak memory  9195.28M, 1.778449s
+max batch size = 176  [ 9195.28MB]

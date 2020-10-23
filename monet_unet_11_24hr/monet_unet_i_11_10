@@ -1,0 +1,228 @@
+Memory budget  10.0  GB
+Batch size  11
+Model un
+Mode inplace_normal
+Solver trying batch size 11
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> ip_grad> [2.75] [0.] [] [6.037712] [0.00282526] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> param_grad> [2.75] [0.08398438] [] [5.587733] [18.840195] []
+<BwdNode aten::batch_norm> [0.75097656] [0.75048828] [0.75048828] [5.433631] [9.182466] [3.813398]
+<BwdNode aten::relu_> [   0.75 -679.25] [-679.25] [] [2.7084112 2.635181 ] [4.1348934] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> ip_grad> [2.75] [2.75] [] [30.262445] [27.290274] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> param_grad> [2.75] [0.08374023] [] [29.992317] [79.56801] []
+<BwdNode aten::batch_norm> [0.75097656] [0.75048828] [0.75048828] [5.4365516] [9.196078] [3.7847757]
+<BwdNode aten::relu_> [   0.75 -679.25] [-679.25] [] [2.7062416 2.6353836] [4.1345716] []
+<BwdNode aten::max_pool2d> [340.1875] [340.75] [] [2.8813004] [18.087505] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> ip_grad> [0.73730469] [0.55175781] [] [14.583993] [13.724863] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> param_grad> [0.73730469] [0.04199219] [] [14.312458] [17.001963] []
+<BwdNode aten::batch_norm> [0.37597656] [0.375] [0.37548828] [2.4161458] [4.1487694] [1.7817378]
+<BwdNode aten::relu_> [   0.375 -339.625] [-339.625] [] [1.3625383 1.3194442] [2.0716906] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> ip_grad> [0.73730469] [0.73925781] [] [26.753485] [27.759552] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> param_grad> [0.73730469] [0.04199219] [] [26.481043] [29.238583] []
+<BwdNode aten::batch_norm> [0.37597656] [0.375] [0.37548828] [2.558601] [4.138422] [1.7807245]
+<BwdNode aten::relu_> [   0.375 -339.625] [-339.625] [] [1.368022 1.31917 ] [2.0737886] []
+<BwdNode aten::max_pool2d> [170.] [170.375] [] [1.4522433] [9.104681] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> ip_grad> [0.27832031] [0.09277344] [] [13.640224] [13.946962] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> param_grad> [0.27832031] [0.02246094] [] [13.516844] [14.916992] []
+<BwdNode aten::batch_norm> [0.18945312] [0.1875] [0.18847656] [1.4328718] [2.2460341] [0.90551376]
+<BwdNode aten::relu_> [   0.1875 -169.8125] [-169.8125] [] [0.69942474 0.6618738 ] [1.0483265] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> ip_grad> [0.27832031] [0.28027344] [] [26.008177] [27.375639] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> param_grad> [0.27832031] [0.02246094] [] [25.883234] [28.66168] []
+<BwdNode aten::batch_norm> [0.18945312] [0.1875] [0.18847656] [1.5614986] [2.242148] [1.0332108]
+<BwdNode aten::relu_> [   0.1875 -169.8125] [-169.8125] [] [0.6931305  0.66114664] [1.0461569] []
+<BwdNode aten::max_pool2d> [84.90625] [85.09375] [] [0.7342458] [4.569888] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> ip_grad> [0.02294922] [0.02490234] [] [13.406408] [14.296352] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> param_grad> [0.02294922] [0.00341797] [] [13.32885] [14.926171] []
+<BwdNode aten::batch_norm> [0.00390625] [0.] [0.00195312] [0.7455945] [1.1378288] [0.5367756]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35698414 0.3325343 ] [0.52508116] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> ip_grad> [0.02294922] [0.02490234] [] [25.57379] [27.504076] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> param_grad> [0.02294922] [0.00390625] [] [25.555313] [29.4775] []
+<BwdNode aten::batch_norm> [0.00390625] [0.] [0.00195312] [0.751245] [1.1393905] [0.53675175]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35687685 0.33251047] [0.52536726] []
+<BwdNode aten::max_pool2d> [43.2265625] [42.453125] [] [0.37693977] [2.307117] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> ip_grad> [0.77929688] [0.78125] [] [7.2180986] [7.691753] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> param_grad> [0.77929688] [0.00244141] [] [7.213676] [8.043396] []
+<BwdNode aten::batch_norm> [0.77734375] [0.7734375] [0.77539062] [0.16350746] [0.28989315] [0.14362335]
+<BwdNode aten::relu_> [  0.7734375 -21.2265625] [-21.2265625] [] [0.09782314 0.08529425] [0.13535023] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> ip_grad> [0.77929688] [0.78125] [] [7.2176456] [7.6909184] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> param_grad> [0.77929688] [0.00244141] [] [7.2145343] [8.044136] []
+<BwdNode aten::batch_norm> [0.77734375] [0.7734375] [0.77539062] [0.1635313] [0.28705597] [0.14359951]
+<BwdNode aten::relu_> [  0.7734375 -21.2265625] [-21.2265625] [] [0.09789467 0.08536577] [0.13540983] []
+<BwdNode aten::adaptive_avg_pool2d> [0.] [22.7734375] [] [1.5149117] [1.2790084] []
+<BwdNode aten::cat> [0.2109375] [0.] [] [1.1158586] [0.8233428] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> ip_grad> [0.02294922] [0.21240234] [] [50.59415] [53.845444] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> param_grad> [0.02294922] [0.00439453] [] [50.45091] [58.492104] []
+<BwdNode aten::batch_norm> [0.00390625] [0.] [0.00195312] [0.7444978] [1.1373758] [0.536561]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35743713 0.33254623] [0.52506924] []
+<BwdNode <Op aten::_convolution [-1, 256, 52, 76]> ip_grad> [0.02294922] [0.02490234] [] [13.3371] [13.952661] []
+<BwdNode <Op aten::_convolution [-1, 256, 52, 76]> param_grad> [0.02294922] [0.00439453] [] [13.33791] [14.789211] []
+<BwdNode aten::batch_norm> [0.00195312] [0.] [0.00097656] [0.41565895] [0.6107688] [0.278306]
+<BwdNode aten::relu_> [  0.       -42.453125] [-42.453125] [] [0.18880367 0.16798973] [0.26583672] []
+<BwdNode aten::adaptive_avg_pool2d> [0.1875] [42.453125] [] [2.4226904] [2.0525694] []
+<BwdNode aten::cat> [0.3984375] [0.375] [] [1.9909859] [1.7148256] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> ip_grad> [0.27832031] [0.46777344] [] [50.679874] [54.14214] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> param_grad> [0.27832031] [0.02246094] [] [50.597942] [56.67318] []
+<BwdNode aten::batch_norm> [0.18945312] [0.1875] [0.18847656] [1.5573978] [2.2338033] [1.0310292]
+<BwdNode aten::relu_> [   0.1875 -169.8125] [-169.8125] [] [0.6925106 0.6613493] [1.0462999] []
+<BwdNode <Op aten::_convolution [-1, 128, 104, 152]> ip_grad> [0.09082031] [0.28027344] [] [13.292158] [14.075744] []
+<BwdNode <Op aten::_convolution [-1, 128, 104, 152]> param_grad> [0.09082031] [0.01123047] [] [13.337612] [14.5600195] []
+<BwdNode aten::batch_norm> [0.00097656] [0.] [0.00048828] [0.7199168] [1.1307597] [0.5314708]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35668612 0.3324628 ] [0.5253434] []
+<BwdNode aten::adaptive_avg_pool2d> [0.375] [84.90625] [] [4.468775] [3.841257] []
+<BwdNode aten::cat> [0.7734375] [0.75] [] [3.9099216] [3.0659676] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> ip_grad> [0.73730469] [1.11425781] [] [51.167118] [55.122578] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> param_grad> [0.73730469] [0.04199219] [] [51.170506] [56.227932] []
+<BwdNode aten::batch_norm> [0.37597656] [0.375] [0.37548828] [2.5613189] [4.138279] [1.7748952]
+<BwdNode aten::relu_> [   0.375 -339.625] [-339.625] [] [1.366961  1.3194561] [2.0719528] []
+<BwdNode <Op aten::_convolution [-1, 64, 208, 304]> ip_grad> [0.54980469] [0.73925781] [] [14.416754] [14.548051] []
+<BwdNode <Op aten::_convolution [-1, 64, 208, 304]> param_grad> [0.54980469] [0.02172852] [] [14.282619] [15.159798] []
+<BwdNode aten::batch_norm> [0.18847656] [0.18798828] [0.18798828] [1.4422655] [2.3955941] [0.9950638]
+Memory budget  10.0  GB
+Batch size  11
+Model un
+Mode inplace_normal
+Solver trying batch size 11
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> ip_grad> [2.75] [0.] [] [6.046629] [0.00283718] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> param_grad> [2.75] [0.08398438] [] [5.5853367] [18.846333] []
+<BwdNode aten::batch_norm> [0.75097656] [0.75048828] [0.75048828] [5.4328203] [9.183407] [3.823471]
+<BwdNode aten::relu_> [   0.75 -679.25] [-679.25] [] [2.7069807 2.6353836] [4.137647] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> ip_grad> [2.75] [2.75] [] [30.103386] [27.283632] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> param_grad> [2.75] [0.08374023] [] [29.990387] [79.57791] []
+<BwdNode aten::batch_norm> [0.75097656] [0.75048828] [0.75048828] [5.425811] [9.195614] [3.7826777]
+<BwdNode aten::relu_> [   0.75 -679.25] [-679.25] [] [2.7069688 2.6357174] [4.13785] []
+<BwdNode aten::max_pool2d> [340.1875] [340.75] [] [2.8817773] [18.087137] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> ip_grad> [0.73730469] [0.55175781] [] [14.585436] [13.592661] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> param_grad> [0.73730469] [0.04199219] [] [14.315033] [16.957796] []
+<BwdNode aten::batch_norm> [0.37597656] [0.375] [0.37548828] [2.4068356] [4.1502] [1.7795324]
+<BwdNode aten::relu_> [   0.375 -339.625] [-339.625] [] [1.8250704 1.3203979] [2.0687103] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> ip_grad> [0.73730469] [0.73925781] [] [26.767706] [27.687525] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> param_grad> [0.73730469] [0.04199219] [] [26.493336] [29.187452] []
+<BwdNode aten::batch_norm> [0.37597656] [0.375] [0.37548828] [2.4151325] [4.152465] [1.7832756]
+<BwdNode aten::relu_> [   0.375 -339.625] [-339.625] [] [1.3620615 1.3192892] [2.0670176] []
+<BwdNode aten::max_pool2d> [170.] [170.375] [] [1.4490485] [9.103119] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> ip_grad> [0.27832031] [0.09277344] [] [13.645207] [13.886952] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> param_grad> [0.27832031] [0.02246094] [] [13.517475] [14.843357] []
+<BwdNode aten::batch_norm> [0.18945312] [0.1875] [0.18847656] [1.4225125] [2.199936] [0.9065628]
+<BwdNode aten::relu_> [   0.1875 -169.8125] [-169.8125] [] [0.6940603 0.6618738] [1.0480165] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> ip_grad> [0.27832031] [0.28027344] [] [26.02159] [27.12698] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> param_grad> [0.27832031] [0.02246094] [] [25.896181] [28.475214] []
+<BwdNode aten::batch_norm> [0.18945312] [0.1875] [0.18847656] [1.4474154] [2.231431] [0.9056568]
+<BwdNode aten::relu_> [   0.1875 -169.8125] [-169.8125] [] [0.69254637 0.66182613] [1.0427952] []
+<BwdNode aten::max_pool2d> [84.90625] [85.09375] [] [0.73542595] [4.5696735] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> ip_grad> [0.02294922] [0.02490234] [] [13.480377] [14.228892] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> param_grad> [0.02294922] [0.00341797] [] [13.376892] [14.817345] []
+<BwdNode aten::batch_norm> [0.00390625] [0.] [0.00195312] [0.7421851] [1.1461377] [0.5342841]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35847425 0.33262968] [0.52804947] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> ip_grad> [0.02294922] [0.02490234] [] [25.638412] [27.379454] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> param_grad> [0.02294922] [0.00390625] [] [25.617981] [29.2917] []
+<BwdNode aten::batch_norm> [0.00390625] [0.] [0.00195312] [0.74266195] [1.1359811] [0.5359888]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35785437 0.33221245] [0.5275965] []
+<BwdNode aten::max_pool2d> [43.2265625] [42.453125] [] [0.37549734] [2.3070335] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> ip_grad> [0.77929688] [0.78125] [] [7.2234154] [7.666266] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> param_grad> [0.77929688] [0.00244141] [] [7.2203994] [8.026111] []
+<BwdNode aten::batch_norm> [0.77734375] [0.7734375] [0.77539062] [0.16367435] [0.2870798] [0.14503002]
+<BwdNode aten::relu_> [  0.7734375 -21.2265625] [-21.2265625] [] [0.09788275 0.0854373 ] [0.13678074] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> ip_grad> [0.77929688] [0.78125] [] [7.2256923] [7.666254] []
+<BwdNode <Op aten::_convolution [-1, 512, 26, 38]> param_grad> [0.77929688] [0.00244141] [] [7.2196364] [8.025324] []
+<BwdNode aten::batch_norm> [0.77734375] [0.7734375] [0.77539062] [0.16342402] [0.28358698] [0.1447916]
+<BwdNode aten::relu_> [  0.7734375 -21.2265625] [-21.2265625] [] [0.09768009 0.08531809] [0.13644695] []
+<BwdNode aten::adaptive_avg_pool2d> [0.] [22.7734375] [] [1.512742] [1.2788296] []
+<BwdNode aten::cat> [0.2109375] [0.] [] [1.113832] [0.8221626] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> ip_grad> [0.02294922] [0.21240234] [] [50.49677] [53.61438] []
+<BwdNode <Op aten::_convolution [-1, 512, 52, 76]> param_grad> [0.02294922] [0.00439453] [] [50.487686] [58.16541] []
+<BwdNode aten::batch_norm> [0.00390625] [0.] [0.00195312] [0.74373484] [1.144886] [0.5359292]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35643578 0.33240318] [0.52764416] []
+<BwdNode <Op aten::_convolution [-1, 256, 52, 76]> ip_grad> [0.02294922] [0.02490234] [] [13.34877] [13.894951] []
+<BwdNode <Op aten::_convolution [-1, 256, 52, 76]> param_grad> [0.02294922] [0.00439453] [] [13.349628] [14.695096] []
+<BwdNode aten::batch_norm> [0.00195312] [0.] [0.00097656] [0.40555] [0.60788393] [0.27621984]
+<BwdNode aten::relu_> [  0.       -42.453125] [-42.453125] [] [0.18891096 0.1679182 ] [0.26583672] []
+<BwdNode aten::adaptive_avg_pool2d> [0.1875] [42.453125] [] [2.2855997] [2.051866] []
+<BwdNode aten::cat> [0.3984375] [0.375] [] [1.9921898] [1.6266465] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> ip_grad> [0.27832031] [0.46777344] [] [50.44844] [53.916027] []
+<BwdNode <Op aten::_convolution [-1, 256, 104, 152]> param_grad> [0.27832031] [0.02246094] [] [50.49305] [56.457855] []
+<BwdNode aten::batch_norm> [0.18945312] [0.1875] [0.18847656] [1.4344454] [2.2187233] [0.9057164]
+<BwdNode aten::relu_> [   0.1875 -169.8125] [-169.8125] [] [0.69327354 0.6617069 ] [1.0434866] []
+<BwdNode <Op aten::_convolution [-1, 128, 104, 152]> ip_grad> [0.09082031] [0.28027344] [] [13.474857] [13.888443] []
+<BwdNode <Op aten::_convolution [-1, 128, 104, 152]> param_grad> [0.09082031] [0.01123047] [] [13.389564] [14.496053] []
+<BwdNode aten::batch_norm> [0.00097656] [0.] [0.00048828] [0.71424246] [1.1314511] [0.5304456]
+<BwdNode aten::relu_> [  0.      -84.90625] [-84.90625] [] [0.35663843 0.3326893 ] [0.5274415] []
+<BwdNode aten::adaptive_avg_pool2d> [0.375] [84.90625] [] [4.5208693] [3.862369] []
+<BwdNode aten::cat> [0.7734375] [0.75] [] [3.910184] [3.0759335] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> ip_grad> [0.73730469] [1.11425781] [] [51.039913] [54.914833] []
+<BwdNode <Op aten::_convolution [-1, 128, 208, 304]> param_grad> [0.73730469] [0.04199219] [] [51.196587] [56.049847] []
+<BwdNode aten::batch_norm> [0.37597656] [0.375] [0.37548828] [2.4064302] [4.137516] [1.7751455]
+<BwdNode aten::relu_> [   0.375 -339.625] [-339.625] [] [1.3629198 1.3195276] [2.0678043] []
+<BwdNode <Op aten::_convolution [-1, 64, 208, 304]> ip_grad> [0.54980469] [0.73925781] [] [14.424217] [14.588714] []
+<BwdNode <Op aten::_convolution [-1, 64, 208, 304]> param_grad> [0.54980469] [0.02172852] [] [14.285612] [15.1540165] []
+<BwdNode aten::batch_norm> [0.18847656] [0.18798828] [0.18798828] [1.4431715] [2.3853183] [1.0025859]
+<BwdNode aten::relu_> [   0.1875 -169.8125] [-169.8125] [] [0.6922364 0.6617665] [1.0426879] []
+<BwdNode aten::adaptive_avg_pool2d> [0.75] [170.1875] [] [8.448923] [7.2372317] []
+<BwdNode aten::cat> [0.0234375] [1.5] [] [7.388699] [5.8962226] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> ip_grad> [2.25] [1.5] [] [55.990448] [56.936157] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> param_grad> [2.25] [0.08374023] [] [56.03962] [154.87355] []
+<BwdNode aten::batch_norm> [0.75097656] [0.75048828] [0.75048828] [5.2870274] [9.034491] [3.6209226]
+<BwdNode aten::relu_> [   0.75 -679.25] [-679.25] [] [2.7130246 2.635789 ] [4.140413] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> ip_grad> [2.75] [2.75] [] [30.102777] [27.282644] []
+<BwdNode <Op aten::_convolution [-1, 64, 416, 608]> param_grad> [2.75] [0.08374023] [] [29.991518] [79.58005] []
+<BwdNode aten::batch_norm> [0.75097656] [0.75048828] [0.75048828] [5.4305077] [9.179866] [3.7725449]
+<BwdNode aten::relu_> [   0.75 -679.25] [-679.25] [] [2.7077794 2.6349306] [4.1381598] []
+<BwdNode <Op aten::_convolution [-1, 1, 416, 608]> ip_grad> [2.38671875] [2.75] [] [2.364111] [1.8164277] []
+<BwdNode <Op aten::_convolution [-1, 1, 416, 608]> param_grad> [2.38671875] [0.00268173] [] [2.3632407] [22.66978] []
+[2, 5, 9, 12, 16, 19, 23, 26, 30, 33, 38, 41, 46, 49, 54, 57, 62, 65]
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter Threads to 12
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 86400.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter Method to 1
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 182075 rows, 41741 columns and 1087702 nonzeros
+Model fingerprint: 0xe936fdbb
+Variable types: 0 continuous, 41741 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+06]
+  Objective range  [1e+00, 2e+04]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 149802 rows and 25759 columns
+Presolve time: 4.68s
+Presolved: 32273 rows, 15982 columns, 344894 nonzeros
+Variable types: 0 continuous, 15982 integer (14580 binary)
+Found heuristic solution: objective 471341.00000
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.8760700e+05   6.935000e+02   0.000000e+00      5s
+    6366    1.9084680e+05   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 1.908468e+05, 6366 iterations, 0.55 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 190846.801    0 1175 471341.000 190846.801  59.5%     -    6s
+H    0     0                    228926.00000 190846.801  16.6%     -    6s
+H    0     0                    191896.00000 190846.801  0.55%     -    6s
+H    0     0                    190944.00000 190846.801  0.05%     -    6s
+     0     0 190859.500    0  612 190944.000 190859.500  0.04%     -    7s
+     0     0 infeasible    0      190944.000 190944.000  0.00%     -   11s
+
+Explored 1 nodes (11412 simplex iterations) in 11.56 seconds
+Thread count was 12 (of 48 available processors)
+
+Solution count 4: 190944 191896 228926 471341 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.909440000000e+05, best bound 1.909440000000e+05, gap 0.0000%
+Batch size 11 feasible
+Solved in 23.991167s with actual opt taking -1.000000s
+Running schedule for batch size 11
+Ran schedule for batch 11 
+Ran batch 11 with peak memory 10245.85M, 1.906634s
+max batch size = 11  [10245.85MB]

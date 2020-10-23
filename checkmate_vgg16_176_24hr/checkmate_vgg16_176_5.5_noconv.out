@@ -1,0 +1,143 @@
+Memory budget  5.5  GB
+Batch size  176
+Model vgg16
+Mode normal
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.28759766] [0.] [] [18.587315] [0.00342131] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.28759766] [0.1328125] [] [17.598951] [29.316341] []
+<BwdNode aten::relu_> [0.] [-2156.] [] [8.567047] [13.126731] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> ip_grad> [0.28759766] [0.28955078] [] [95.08707] [85.662186] []
+<BwdNode <Op aten::_convolution [-1, 64, 224, 224]> param_grad> [0.28759766] [0.13256836] [] [94.80711] [120.30436] []
+<BwdNode aten::relu_> [0.] [-2156.] [] [8.570957] [13.116276] []
+<BwdNode aten::max_pool2d> [1079.] [1078.] [] [8.791292] [56.598686] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> ip_grad> [0.07226562] [1.07421875] [] [45.25248] [42.329716] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> param_grad> [0.07226562] [0.13232422] [] [44.972015] [52.497375] []
+<BwdNode aten::relu_> [0.] [-1078.] [] [4.299021] [6.575513] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> ip_grad> [0.07226562] [0.07421875] [] [83.353676] [88.20746] []
+<BwdNode <Op aten::_convolution [-1, 128, 112, 112]> param_grad> [0.07226562] [0.13232422] [] [83.04259] [91.316956] []
+<BwdNode aten::relu_> [0.] [-1078.] [] [4.2942047] [6.5723777] []
+<BwdNode aten::max_pool2d> [540.5] [540.] [] [4.525149] [28.57158] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [1.01806641] [0.52050781] [] [41.838276] [43.65021] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [1.01806641] [0.94238281] [] [41.578255] [45.2165] []
+<BwdNode aten::relu_> [1.] [-539.] [] [2.1646142] [3.2790303] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [1.01806641] [1.02050781] [] [79.916176] [86.75821] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [1.01806641] [0.06738281] [] [79.91003] [87.5777] []
+<BwdNode aten::relu_> [1.] [-539.] [] [2.1612525] [3.2797933] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> ip_grad> [1.01806641] [1.02050781] [] [79.9157] [86.75829] []
+<BwdNode <Op aten::_convolution [-1, 256, 56, 56]> param_grad> [1.01806641] [0.06738281] [] [79.96371] [87.558365] []
+<BwdNode aten::relu_> [1.] [-539.] [] [2.1651864] [3.2793403] []
+<BwdNode aten::max_pool2d> [270.] [271.] [] [2.2744298] [14.465523] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [0.50488281] [0.00683594] [] [40.445267] [43.28742] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [0.50488281] [0.03515625] [] [40.604687] [43.615578] []
+<BwdNode aten::relu_> [0.5] [-269.5] [] [1.0989666] [1.6451001] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [0.50488281] [0.50683594] [] [79.19075] [86.243614] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [0.50488281] [0.03515625] [] [79.15478] [86.05143] []
+<BwdNode aten::relu_> [0.5] [-269.5] [] [1.0960937] [1.6496658] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> ip_grad> [0.50488281] [0.50683594] [] [79.153404] [86.243546] []
+<BwdNode <Op aten::_convolution [-1, 512, 28, 28]> param_grad> [0.50488281] [0.03515625] [] [79.152466] [86.09365] []
+<BwdNode aten::relu_> [0.5] [-269.5] [] [1.0979056] [1.6496778] []
+<BwdNode aten::max_pool2d> [135.375] [135.25] [] [1.1566281] [7.4386] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [0.62646484] [0.62841797] [] [20.362865] [22.280575] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [0.62646484] [0.00195312] [] [20.362495] [21.723677] []
+<BwdNode aten::relu_> [0.625] [-67.375] [] [0.29443502] [0.42105913] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [0.62646484] [0.62841797] [] [20.36146] [22.285282] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [0.62646484] [0.00195312] [] [20.361315] [21.720373] []
+<BwdNode aten::relu_> [0.625] [-67.375] [] [0.29349327] [0.42059422] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> ip_grad> [0.62646484] [0.62841797] [] [20.363594] [22.28235] []
+<BwdNode <Op aten::_convolution [-1, 512, 14, 14]> param_grad> [0.62646484] [0.00195312] [] [20.36252] [21.721172] []
+<BwdNode aten::relu_> [0.625] [-67.375] [] [0.294137] [0.42123795] []
+<BwdNode aten::max_pool2d> [34.] [34.625] [] [0.30382872] [2.0410657] []
+<BwdNode aten::adaptive_avg_pool2d> [0.] [16.84375] [] [1.5456557] [1.38973] []
+<BwdNode aten::flatten> [-16.84375] [-16.84375] [] [0.00966787] [0.00420809] []
+<BwdNode <Op aten::addmm [-1, 4096]> ip_grad> [0.] [0.] [] [6.5318108] [6.847191] []
+<BwdNode <Op aten::addmm [-1, 4096]> param_grad> [0.40625] [0.] [] [6.719935] [4.6107173] []
+<BwdNode aten::relu_> [0.] [-2.75] [] [0.01790524] [0.05768538] []
+<BwdNode aten::dropout> [0.6875] [2.75] [] [0.0284791] [0.06842613] []
+<BwdNode <Op aten::addmm [-1, 4096]> ip_grad> [0.] [0.] [] [1.1514783] [1.1193633] []
+<BwdNode <Op aten::addmm [-1, 4096]> param_grad> [0.] [0.] [] [1.2566805] [0.8167267] []
+<BwdNode aten::relu_> [0.] [-2.75] [] [0.01864433] [0.06018877] []
+<BwdNode aten::dropout> [0.6875] [2.75] [] [0.02868176] [0.06797314] []
+<BwdNode <Op aten::addmm [-1, 1000]> ip_grad> [0.] [0.] [] [0.31670332] [0.3450513] []
+<BwdNode <Op aten::addmm [-1, 1000]> param_grad> [0.] [0.37509155] [] [0.3163576] [0.25407076] []
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter LogToConsole unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter LogFile unchanged
+   Value:   Default: 
+Changed value of parameter Threads to 48
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter OptimalityTol to 0.0001
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Parameter IntFeasTol unchanged
+   Value: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter Presolve to 2
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Changed value of parameter StartNodeLimit to 10000000
+   Prev: -1  Min: -2  Max: 2000000000  Default: -1
+Parameter TimeLimit unchanged
+   Value: 7200.0  Min: 0.0  Max: inf  Default: inf
+
+
+Restarting solve
+
+
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 76245 rows, 41128 columns and 229818 nonzeros
+Model fingerprint: 0x28e4e7d9
+Variable types: 9409 continuous, 31719 integer (31719 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+06]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [1e+00, 5e+06]
+  RHS range        [1e+00, 5e+06]
+Presolve removed 50823 rows and 22075 columns
+Presolve time: 0.21s
+
+Explored 0 nodes (0 simplex iterations) in 0.24 seconds
+Thread count was 1 (of 48 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+SOLVE TIME 0.27635560600901954
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    76245         0    18818         0s
+        0    76245         0    18818         5s
+        0    68446         0    18807        10s
+        0    68446         0    18807        16s
+        0    61659         0    18686        21s
+        0    61659         0    18686        25s
+        0    61659         0    18686        30s
+        0    58511         0    18563        35s
+        0    55481         0    18406        41s
+        0    55481         0    18406        46s
+        0    50121         0    17993        51s
+        0    45239         0    17476        55s
+        0    40896         0    16806        61s
+        0    38834         0    16507        65s
+        0    36885         0    16157        70s
+        0    31565         0    14926        75s
+        0    24351         0    12776        80s
+        0    18986         0    10740        85s
+        0    14682         0     8896        90s
+        0     7010         0     4817        95s
+        0     2704         0     1897       100s
+        0     1032         0      718       105s
+        0      485         0      335       110s
+       10      346         0       96       115s
+       12      269         0       96       120s
+       21      199         0       96       125s
+       27      129         0       96       130s
+       28       54         0       44       135s
+       28       28         4        4       138s
+
+IIS computed: 28 constraints, 4 bounds
+IIS runtime: 138.34 seconds

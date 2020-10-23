@@ -1,0 +1,4 @@
+Memory budget  10.0  GB
+Batch size  320
+Model googlenet
+Mode inplace_conv_normal

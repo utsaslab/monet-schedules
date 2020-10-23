@@ -1,0 +1,73 @@
+Memory budget  6.0  GB
+Batch size  176
+Model vgg16
+Mode normal
+Using license file /home/cc/gurobi.lic
+Academic license - for non-commercial use only
+Parameter LogToConsole unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter LogFile unchanged
+   Value:   Default: 
+Changed value of parameter Threads to 48
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 7200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter OptimalityTol to 0.0001
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Parameter IntFeasTol unchanged
+   Value: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter Presolve to 2
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Changed value of parameter StartNodeLimit to 10000000
+   Prev: -1  Min: -2  Max: 2000000000  Default: -1
+Parameter TimeLimit unchanged
+   Value: 7200.0  Min: 0.0  Max: inf  Default: inf
+
+
+Restarting solve
+
+
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (linux64)
+Optimize a model with 76245 rows, 41128 columns and 229818 nonzeros
+Model fingerprint: 0xb91d819d
+Variable types: 9409 continuous, 31719 integer (31719 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+06]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [1e+00, 5e+06]
+  RHS range        [1e+00, 5e+06]
+Presolve removed 51240 rows and 22361 columns
+Presolve time: 0.42s
+Presolved: 25005 rows, 18767 columns, 89318 nonzeros
+Variable types: 0 continuous, 18767 integer (14111 binary)
+Presolve removed 95 rows and 95 columns
+Presolved: 24910 rows, 18672 columns, 89128 nonzeros
+
+
+Root relaxation: objective 2.613116e+05, 4541 iterations, 0.30 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 261311.610    0 1506          - 261311.610      -     -    1s
+     0     0 1.000e+100    0 4574          - infeasible      -     -    2s
+
+Cutting planes:
+  Gomory: 6
+  Cover: 798
+  Implied bound: 40
+  Clique: 2
+  MIR: 91
+  StrongCG: 19
+  Zero half: 50
+  RLT: 124
+  Relax-and-lift: 4
+
+Explored 1 nodes (15377 simplex iterations) in 2.53 seconds
+Thread count was 48 (of 48 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+SOLVE TIME 2.58222941798158
